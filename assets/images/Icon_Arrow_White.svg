@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-v1" transform="translate(-237.000000, -2048.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Closing-CTA" transform="translate(0.000000, 1804.000000)">
+                <g id="CTA-Button" transform="translate(19.000000, 224.000000)">
+                    <path d="M227.998994,24.9554168 C227.999662,24.9701968 228,24.9850601 228,25 C228,25.3295772 227.835751,25.6219158 227.582375,25.8040934 L224.789263,29.5964542 C224.464305,30.0376674 223.843664,30.1315689 223.403023,29.806189 C222.962381,29.480809 222.868602,28.8593625 223.19356,28.4181493 L224.974551,26 L219.030181,26 C218.461228,26 218,25.5522847 218,25 C218,24.4477153 218.461228,24 219.030181,24 L225.055521,24 L223.206359,21.5988281 C222.872028,21.1646927 222.952479,20.5413757 223.386051,20.2066106 C223.819624,19.8718454 224.442133,19.9524009 224.776464,20.3865362 L227.793706,24.3044823 C227.940693,24.4953482 228.009277,24.7267003 227.998994,24.9554168 Z" id="Arrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

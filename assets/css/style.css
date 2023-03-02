@@ -1,0 +1,1233 @@
+/* css */
+@import url(variable.css);
+@import url(bootstrap.css);
+
+/* *************** Global
+ ******************************* */
+ body {
+    margin: 0;
+    line-height: 1.4;
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.button{
+    font-size: 16px;
+    line-height: 21px;
+    padding: 11px 16px;
+    min-height: 45px;
+    background-color: #fcae03;
+    width: 311px;
+    font-family: var(--self-font-family);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    font-weight: var(--semi-bold);
+    color: var(--primary-text);
+    border-radius: var(--corner-radius-small);
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: inline-flex;   
+}
+.button-light{
+    font-size: 16px;
+    line-height: 21px;
+    padding: 11px 16px;
+    min-height: 45px;
+    background: var(--white);
+    border: 1px solid #c5c5c5;
+    font-family: var(--self-font-family);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    font-weight: var(--semi-bold);
+    color: var(--primary-text);
+    border-radius: var(--corner-radius-small);
+    text-decoration: none;
+    display: inline-flex;
+}
+/* .button:hover{
+    font-size: 16px;
+    line-height: 21px;
+    padding: 11px 16px;
+    min-height: 45px;
+    background-color: #fcae03;
+    width: 311px;
+} */
+/* *************** Hero Section
+ ******************************* */
+
+.hero{
+    position: relative;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end; */
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 655px;
+    border-radius: 0px 0px 24px 24px;
+    height: 685px;
+}
+ /* @media (min-width: 577px){
+    
+} */
+.header-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0px;
+}
+.header-image img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 10%;
+    }
+/* ========= Navbar ========= */
+.header-navbar{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    top: 0px;
+    height: 66px;
+    z-index: 1001;
+    font: var(--footnote-semi-bold);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    background-color: transparent;
+}
+.header-navbar.fixed{
+    background-color: #00ADEE !important;
+    z-index: 5;
+}
+.header-navbar ul.nav-list li {
+    float: left;
+    list-style: none;
+}
+.header-navbar ul li a, .header-navbar .login, .drop-list{
+    padding: 7px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.header-navbar ul li a:hover, .header-navbar .login:hover, .drop-list:hover{
+    background-color: #ffffff;
+    color: rgb(0, 173, 238);
+}
+.header-navbar ul li .drop-list img {
+    filter: brightness(0) invert(1);
+    vertical-align: middle;
+}
+.drop-list{
+    border-radius: 8px 8px 0 0 !important;
+    position: relative;
+}
+.header-navbar button{
+    font-size: 13px;
+    line-height: 18px;
+    padding: 6px 16px;
+    min-height: 32px;
+    background: var(--cta-orange);
+    cursor: pointer;
+    font-family: var(--self-font-family);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    font-weight: var(--semi-bold);
+    color: var(--primary-text);
+    border-radius: var(--corner-radius-small);
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: inline-flex;
+}
+ul.sub-list{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5px 0;
+    min-width: 248px;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: 6px 6px 6px 0 rgb(0 0 0 / 18%), -6px 6px 6px 0 rgb(0 0 0 / 18%);
+}
+ul.sub-list li {
+    height: 30px;
+}
+ul.sub-list li a{
+    text-decoration: none;
+    padding: 3px 20px;
+    line-height: 2;
+    text-transform: none;
+    color: var(--black);
+    font-weight: 600;
+}
+.header-navbar ul.nav-list .drop-list:hover ul.sub-list{
+    display: flex !important;
+}
+
+@media (max-width: 770px){
+    .header-navbar{
+    background-color: #00ADEE !important;
+    }
+    .header-navbar button, .header-navbar .nav-list{
+        display: none;
+    }
+}
+
+/* ========= Mobile Navbar ========= */
+.mobile-nav{
+    height: calc(100vh - 66px);
+    position: fixed;
+    top: 66px;
+    z-index: 5;
+    width: 100%;
+    background-color: #fff;
+}
+.mobile-nav .list .list-item{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(204,204,204,.42);
+    text-decoration: none;
+    color: inherit;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.mobile-nav .list {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.mobile-nav .list .list-item .img{
+    padding-right: 12px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ========= Main Section ========= */
+.main .content input{
+    border: 1px solid transparent;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 48px;
+    margin-bottom: 16px;
+    text-indent: 16px;
+    appearance: none;
+    box-shadow: rgb(133 127 120 / 24%) 0px 8px 24px;
+    outline: transparent solid 1px;
+    color: rgb(50, 50, 50);
+    line-height: 18px;
+    height: 48px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 12px;
+    width: 386px;
+    margin: 0;
+}
+.main .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 542px;
+}
+
+.main .content .rating{
+    display: inline-block;
+    font-family: Times;
+    line-height: 1;
+    font-size: 22px;
+}
+.main .content .rating::before {
+    content: "★★★★★";
+    -webkit-text-fill-color: rgb(252, 174, 3);
+    background: linear-gradient(90deg, rgb(252, 174, 3) 98%, rgb(255, 255, 255) 98%) text;
+}
+.main .content .rating-text{
+    margin: 4px 0px 0px 4px;
+    font: var(--footnote-semi-bold);
+    color: var(--gray-primary-900);
+}
+.main .content .review{
+    font: var(--footnote-bold);
+    color: var(--gray-primary-900);
+    margin: 4px 0px 0px 4px;
+    text-align: left !important;
+}
+.banner-img{
+    width: 481px; position: relative; bottom: -115px;
+}
+.main .content h1{
+    font: var(--headline-big); text-align: left;
+    color: #fff;
+}
+.main .content h2, .main .content h3{
+    font: var(--headline); text-align: left;
+    color: #ffffff;
+}
+.main .content h3{
+    display: none;
+}
+.main .content h6{
+    font: var(--caption-2-medium);
+    color: #ffffff;
+}
+.ready-for-liftoff{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.ready-for-liftoff .ready-wrapper{
+    background: var(--white);
+    color: var(--primary-text);
+    box-shadow: none;
+    padding: calc(var(--spacing-increment) * 2);
+    border-radius: var(--corner-radius-large);
+    margin-left: 20px;
+    margin-right: 20px;
+    outline-color: var(--gray-primary-900);
+}
+.ready-for-liftoff .for-mg{
+    height: 217px;
+}
+.ready-for-liftoff .banner-img-mb{
+    width: 223px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.ready-for-liftoff .ready-wrapper h4{
+    font: var(--title-3);
+    text-align: center;
+    margin: 0;
+}
+.ready-for-liftoff .ready-wrapper p{
+    font: var(--footnote-medium);
+    text-align: center;
+    margin: 0;
+}
+.ready-for-liftoff .ready-wrapper h5{
+    font: var(--headline);
+    text-align: center;
+    color: var(--dark-blue);
+    margin: 0;
+}
+.main .content form {
+ width: 100%;
+ position: relative;
+}
+.mo-btn{
+    position: absolute !important;
+    right: 6px;
+    top: 27px;
+    bottom: 6px;
+    font-size: 0px;
+    width: 37px;
+    height: 37px;
+    background-color: rgb(255, 140, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(133 127 120 / 24%) 0px 8px 24px;
+    outline: transparent solid 1px;
+    border-radius: 24px;
+    font-size: 16px;
+    padding: 15px 16px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+@media (max-width: 1200px){
+    .hero{
+        height: unset;
+    }
+    .banner-img, .main .content h2, .main .content h6{
+        display: none;
+    }
+    .ready-for-liftoff{
+        display: flex;
+    }
+    .main .content {
+        max-width: 542px;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        padding-top: 42px;
+    }
+    .main .content h1{
+        font: var(--extra-large-title);
+        text-align: center;
+    }
+    .main .content h3{
+        display: block;
+        margin: 4px 0 12px;
+    }
+    .main .content form{
+        margin-top: 30px;
+    }
+    .main .content .rating::before {
+        -webkit-text-fill-color: rgb(0, 118, 163);    
+        background: linear-gradient(90deg, rgb(0, 118, 163) 98%, rgb(255, 255, 255) 98%) text;
+    }
+}
+
+@media (max-width: 575px){
+    .main .content{
+        width: 100%;
+        padding-left: 20px;
+    padding-right: 20px;
+    }
+    .main .content input {
+    width: 100%
+   }
+   .mo-btn{
+    display: flex !important;
+   }
+   .ready-for-liftoff .ready-wrapper{
+    width: 100%;
+   }
+}
+/* *************** ways to build credit
+ ******************************* */
+.ways-to-build-credit{
+    padding: 55px 0;
+    background-color: white;
+}
+.ways-to-build-credit h1{
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.ways-to-build-credit p{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.ways-to-build-credit .cards{
+    background-color: #0076A3;
+    color: var(--white);
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 8px 0px;
+    border-radius: var(--corner-radius-large);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 320px;
+    height: auto;
+    position: relative;
+    padding: 20px 20px 0px 20px;
+    overflow: hidden;
+}
+.ways-to-build-credit .cards .shape{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+width: 203%;
+/* max-width: 320px; */
+}
+.ways-to-build-credit .cards h3{
+    font: var(--title-3);
+    margin: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.ways-to-build-credit .cards a{
+    font-family: var(--self-font-family);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    font-weight: var(--semi-bold);
+    color: var(--primary-text);
+    border-radius: var(--corner-radius-small);
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 11px 13px;
+    min-height: 45px;
+    background: var(--cta-orange);
+}
+.ways-to-build-credit .cards h6{
+    font: var(--body-semi-bold);
+    margin: 0px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (max-width: 763px){
+    .ways-to-build-credit .cards{
+        max-width: 100%;
+    }
+    .ways-to-build-credit .cards .shape{
+        width: 103%;
+    }
+}
+/* *************** How it works
+ ******************************* */
+.how-it-works {
+    position: relative;
+    padding: 48px 0px;
+    background-color: white;
+}
+.how-it-works h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(50, 50, 50);
+    text-align: center;
+}
+.how-it-works p{
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+    margin: 0px 0px 32px;
+    text-align: center;
+}
+.how-it-works .video{
+    position: relative;
+    box-sizing: border-box;
+    max-width: 610px;
+    width: 100%;
+    padding-bottom: 42px;
+}
+.how-it-works .video-wrapper{
+    display: flex;
+    position: relative;
+    padding-bottom: 56.25%;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.how-it-works .count{
+    padding-top: 4px;
+    height: 32px;
+    font: var(--extra-large-title);
+    line-height: 1;
+    color: var(--cta-orange);
+}
+.how-it-works h3{
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 8px;
+}
+.how-it-works .content{
+    margin: 0px 0px 0px 12px;
+}
+.how-it-works h6{
+    margin-top: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+@media (max-width: 763px){
+.how-it-works {
+    padding-top: 0px;
+}
+.how-it-works h1{
+    font-size: 18px;
+}
+.how-it-works .count{
+    max-width: 70px;
+    padding: 0 20px;
+    text-align: center;
+}
+}
+/* *************** Features
+ ******************************* */
+.features{
+    background-color: rgb(230, 247, 253);
+    padding: 32px 15px;
+}
+.features h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(50, 50, 50);
+    text-align: center;
+}
+.features .cards{
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 8px 0px;
+    padding: 24px;
+    border-radius: 24px;
+    flex-direction: row;
+    padding: 30px;
+    height: auto;
+    margin-top: 20px;
+}
+.features .cards div{
+    margin: 0px 20px;
+}
+.features .cards h3{
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 22px;
+    align-self: start;
+    text-transform: none;
+}
+.features .cards p{
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 4px;
+    color: rgb(50, 50, 50);
+}
+
+/* *************** Branding
+ ******************************* */
+.branding{
+    padding: 32px 15px 12px;
+    background-color: rgb(247, 247, 247);
+}
+.branding h1{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(0, 173, 238);
+    margin-bottom: 0px;
+    text-align: center;
+}
+.branding img{
+    margin: 20px;
+}
+
+
+/* *************** Self Credit Builder Account
+ ******************************* */
+.self-credit-builder-account{
+    background-color: rgb(252, 174, 3);
+    padding: 0px 16px 0px;
+    position: relative;
+}
+.self-credit-builder-account img{
+    height: 345px;
+}
+.self-credit-builder-account button{
+    background: var(--gray-primary-900);
+    color: var(--white);
+}
+.self-credit-builder-account h1{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 32px;
+}
+.self-credit-builder-account p{
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 16px;
+}
+.self-credit-builder-account h6{
+    font-size: 16px;
+    line-height: 21px;
+    padding: 11px 16px;
+    min-height: 45px;
+    text-align: center;
+}
+.self-credit-builder-account .p2{
+    font-size: 9px;
+    line-height: 13px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 24px;
+}
+
+@media (max-width: 570px){
+    .self-credit-builder-account p{
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 150px;
+        color: rgb(50, 50, 50);
+        margin-bottom: 16px;
+    }
+    .self-credit-builder-account .p2{
+        font-size: 10px;
+        line-height: 13px;
+        width: 35%;
+        color: rgb(50, 50, 50);
+    }
+    .self-credit-builder-account h1{
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        line-height: 32px;
+        max-width: 280px;
+    }
+    .self-credit-builder-account .button{
+        width: 288px;
+    }
+    .self-credit-builder-account{
+        min-height: 480px;
+        padding: 32px 16px 0px;
+        position: relative;
+        display: flex;
+    
+    }
+    .self-creadet-img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+/* *************** Pricing
+ ******************************* */
+.pricing{
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    padding: 32px 0px;
+    color: #323232;
+}
+.pricing h6{
+    font-size: 24px;
+    line-height: 28px;
+}
+.pricing .cards {
+    display: flex;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    align-self: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    box-shadow: rgb(133 127 120 / 24%) 0px 8px 24px;
+    position: relative;
+    color: rgb(50, 50, 50);
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 220px;
+}
+.pricing .cards h3{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0px 0px 32px;
+    font-weight: bold;
+}
+.pricing .cards h1{
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #323232;
+    font-weight: 400;
+    margin: 0;
+}
+.pricing .cards h1 span{
+    font-size: 24px;
+    line-height: 24px;
+}
+.pricing .cards h4, .pricing .cards h5{
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #323232;
+    font-weight: 400;
+}
+.pricing .cards h5{
+    font-weight: 700;
+}
+.pricing .cards img{
+    position: absolute;
+    width: 102%;
+    left: -1px;
+    top: -1px;
+    right: 0px;
+    border-radius: 32px 32px 0px 0px;
+    user-select: none;
+    pointer-events: none;
+}
+.pricing .cards p{
+    font-size: 12px;
+    line-height: 32px;
+    color: rgb(102, 102, 102);
+    margin: 0;
+}
+.pricing .sm-text{
+    font-size: 10px;
+    line-height: 32px;
+    color: rgb(102, 102, 102);
+}
+@media (max-width:981px) {
+    .pricing-list{
+        width: calc(100vw - 32px);
+        overflow-x: auto;
+    }
+}/* width */
+.pricing-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .pricing-list::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  .pricing-list::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+  /* Handle on hover */
+  .pricing-list::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
+@media(max-width: 763px){
+    .pricing h6{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .pricing .p2{
+        font-size: 11px;
+    }
+}
+/* *************** Pay rent
+ ******************************* */
+.pay-rent{
+    background: var(--dark-green);
+    color: var(--white);
+    padding: 68px 0px 0;
+}
+.pay-rent h1{
+    background: var(--dark-green);
+    color: var(--white);
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+}
+.pay-rent p{
+    margin: 20px 0 24px;
+    font-size: 15px;
+}
+.pay-rent button{
+    width: 90%;
+}
+@media (max-width: 768px){
+    .pay-rent button{
+        width: 100%;
+    }
+}
+
+
+/* *************** Start building history
+ ******************************* */
+.start-building-history{
+    position: relative;
+    background-color: rgb(0, 173, 238);
+    color: rgb(255, 255, 255);
+    padding: 48px 0px;
+}
+.start-building-history .cards{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 296px;
+    padding: 24px 16px;
+    text-align: center;
+    border-radius: 32px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(133 127 120 / 24%) 0px 8px 24px;
+    color: rgb(50, 50, 50);
+}
+.start-building-history .cards .img{
+    margin-bottom: 24px;
+}
+.start-building-history .cards h4{
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--primary-text);
+}
+.start-building-history .cards p{
+    margin-top: 0px;
+    font-size: 14px;
+    margin-bottom: 24px;
+    color: var(--primary-text);
+    font-weight: normal;
+}
+.start-building-history .cards .link{
+    color: rgb(0, 173, 238);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+/* *************** Payment history makes up
+ ******************************* */
+.payment-history-makes{
+    position: relative;
+    padding: 15px 0px;
+}
+.payment-history-makes img{
+    padding: 14px 38px;
+}
+.payment-history-makes h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(50, 50, 50);
+}
+.payment-history-makes p{
+    margin-top: 0px;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+
+/* *************** Trusted Security
+ ******************************* */
+.trusted-security{
+    position: relative;
+    padding: 48px 0px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+}
+.trusted-security img{
+    margin-bottom: 24px;
+}
+.trusted-security h3{
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(0, 216, 102);
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.trusted-security p{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+
+/* *************** Reviews & Rating
+ ******************************* */
+.reviews-rating{
+    position: relative;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    padding: 48px 0px;
+    color: rgb(50, 50, 50);
+}
+
+.reviews-rating h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(50, 50, 50);
+}
+.reviews-rating .img1{
+    width: 136px;
+    margin-bottom: 20px;
+}
+.reviews-rating .img2{
+    margin-left: 24px;
+    width: 184px;
+    margin-bottom: 20px;
+}
+.reviews-rating .cards{
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(133 127 120 / 24%) 0px 8px 24px;
+    padding: 24px;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+}
+.reviews-rating .cards p{
+    margin-top: 0px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: rgb(102, 102, 102);
+}
+.reviews-rating .cards h3{
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: rgb(50, 50, 50);
+}
+
+
+/* *************** Benefits of a Credit Builder
+ ******************************* */
+.benefits-of-credit{
+    position: relative;
+    padding: 48px 0px;
+    background-color: white;
+}
+.benefits-of-credit h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: rgb(50, 50, 50);
+}
+.benefits-of-credit .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.benefits-of-credit .cards img{
+    width: 60px;
+    margin-bottom: 16px;
+    align-self: center;
+}
+.benefits-of-credit .cards h3{
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.benefits-of-credit .cards p{
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 0px;
+}
+
+
+
+/* *************** control of your credit
+ ******************************* */
+.control-your-credit{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 173, 238);
+    color: rgb(255, 255, 255);
+    padding: 32px 0px 48px;
+}
+.control-your-credit h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px 0px 34px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(0, 173, 238);
+    color: rgb(255, 255, 255);
+}
+.control-your-credit form .input {
+    height: 48px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: var(--corner-radius-small);
+    margin-bottom: 15px;
+}
+.control-your-credit form .input label{
+    position: absolute;
+    top: 13px;
+    left: 19px;
+    z-index: 1;
+    font-family: var(--self-font-family);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: var(--medium);
+    color: var(--secondary-text-alt);
+}
+.control-your-credit form .input input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--corner-radius-small);
+    padding: 27px 16px 10px 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.control-your-credit p{
+    line-height: 1.2;
+    margin-top: 8px;
+    text-align: center;
+    background-color: rgb(0, 173, 238);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 32px;
+}
+.control-your-credit p a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* *************** Footer
+ ******************************* */
+ .footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 15px;
+ }
+ .footer .title{
+    margin-top: 0px;
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+ }
+ .footer .text{
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+    margin-top: 13px;
+ }
+ .footer .column{
+    display: flex;
+    flex-direction: column;
+ }
+ .footer .sup-btn{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(0, 173, 238);
+    color: rgb(255, 255, 255);
+    border-radius: 24px;
+    margin: 4px 0px 0px 4px;
+    padding: 3px 8px;
+    letter-spacing: 0.3px;
+    display: none;
+ }
+ .footer p{
+    display: flex;
+    flex-direction: column;
+    color: rgb(136, 136, 136);
+    font-size: 10px;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    /* white-space: pre-wrap; */
+ }
+ .footer .text-1{
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+    margin-top: 13px;
+ }
+ .footer .list {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    color: rgb(136, 136, 136);
+ }
+ .footer .list a{
+margin: 0 !important;
+font-size: 16px;
+ }
+ .footer .list a:hover{
+    font-weight: bold;
+ }
+ .footer .join{
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+    margin-bottom: 9px;
+ }
+ .logo.Link_module_link__2e122c45{
+    display: none !important;
+ }

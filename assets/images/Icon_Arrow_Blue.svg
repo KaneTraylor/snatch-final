@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="11px" viewBox="0 0 10 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-v1" transform="translate(-150.000000, -2437.000000)" fill="#48ACE8" fill-rule="nonzero">
+            <g id="Footer" transform="translate(0.000000, 2126.000000)">
+                <g id="CTA-Button" transform="translate(16.000000, 304.000000)">
+                    <path d="M140.986001,13.0286134 L135,13.0286134 C134.447715,13.0286134 134,12.5808981 134,12.0286134 C134,11.4763286 134.447715,11.0286134 135,11.0286134 L141.055116,11.0286134 L139.190639,8.61069311 C138.85339,8.17333601 138.934543,7.54539331 139.3719,7.20814383 C139.809257,6.87089435 140.4372,6.95204762 140.774449,7.38940472 L143.818028,11.3364262 C144.090626,11.68994 144.095894,12.1813177 143.830939,12.540595 L140.78736,16.6676702 C140.459565,17.1121577 139.833507,17.206756 139.38902,16.8789614 C138.944532,16.5511669 138.849934,15.9251085 139.177728,15.480621 L140.986001,13.0286134 Z" id="Arrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
