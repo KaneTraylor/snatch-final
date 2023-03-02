@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <!-- global css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home-form.css">
 </head>
 
 <body>
@@ -17,7 +18,10 @@
     <section>
         <div class="hero">
             <div class="header-image">
-                <img src="assets/images/Three_Wave_Background.svg" alt="">
+                <<<<<<< Updated upstream <img src="assets/images/Three_Wave_Background.png" alt="">
+                    =======
+                    <img src="assets/images/Three_Wave_Background.svg" alt="">
+                    >>>>>>> Stashed changes
             </div>
             <header class="header-navbar">
                 <div class="container d-flex justify-content-between">
@@ -58,7 +62,7 @@
                         </form>
                         <div class="ready-for-liftoff">
                             <div class="for-mg"></div>
-                            <img src="./assets/images/49_PTS.svg" alt="Hand Holding A Phone" class="banner-img-mb">
+                            <img src="./assets/images/abbyhero.png" alt="Hand Holding A Phone" class="banner-img-mb">
                             <div class="ready-wrapper">
                                 <h4>Ready for liftoff?</h4>
                                 <p>Customers who make on-time payments can see an average credit score bump of</p>
@@ -87,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="./assets/images/49_PTS.svg" alt="Hand Holding A Phone" class="banner-img">
+                    <img src="./assets/images/abbyhero.png" alt="Hand Holding A Phone" class="banner-img">
                 </div>
             </div>
         </div>
@@ -114,13 +118,13 @@
     <section class="ways-to-build-credit">
         <div class="container d-md-flex d-block px-8 px-md-0 justify-content-center">
             <div>
-                <h1>Two new ways to build credit.</h1>
-                <p>How do you want to build your credit?</p>
+                <h1>A whole new way to build credit.</h1>
+                <p>Build credit history & get access to Snatch Builder.</p>
                 <div class="d-flex gap-9 d-flex flex-column flex-md-row">
                     <div class="cards">
                         <img class="shape" src="assets/images/blue-blob.png" alt="">
-                        <h3>Build by saving</h3>
-                        <h6>I want to build my credit and get money back at the end.</h6>
+                        <h3>Build credit history</h3>
+                        <h6>We report Snatch builder payments so you can build positive credit history.</h6>
                         <div class="d-flex justify-content-between justify-content-md-center align-items-end mt-9">
                             <img class="img" width="160" height="160" src="assets/images/person-holding-star.svg">
                             <a class="mb-8" href="">Get started</a>
@@ -128,8 +132,8 @@
                     </div>
                     <div class="cards" style="background-color: #00773A;">
                         <img class="shape" src="assets/images/green-blob.png" alt="">
-                        <h3>Build by saving</h3>
-                        <h6>I want to build my credit and get money back at the end.</h6>
+                        <h3>Learn while building</h3>
+                        <h6>Snatch Builder courses are curated courses built for you by professionals.</h6>
                         <div class="d-flex justify-content-between justify-content-md-center align-items-end mt-9">
                             <img class="img" width="160" height="160" src="assets/images/phone-with-utilities.svg">
                             <a class="mb-8" href="">Get started</a>
@@ -205,6 +209,130 @@
             </div>
         </div>
     </section>
+
+    <!--====== costing you start ======-->
+    <section class="container credit-costing-you-slider">
+        <div class="intro">
+            <div class="header">
+                <h2 class="">
+                    See what credit is costing you </h2>
+            </div>
+
+            <div class="subheader">
+                View your score beside some of the most popular loan and credit types. You could be
+                paying <b>thousands</b> extra in interest.
+
+            </div>
+        </div>
+
+        <div class="loan-widget">
+            <div class="loan-type-info-container">
+                <div class="column left">
+                    <!-- <div class="dd-label">Loan type</div> -->
+                    <div class="custom-select">
+                        <select name="loanType" id="loans">
+                            <option value="reset">Select loan type</option>
+                            <option value="auto">Auto Loan</option>
+                            <option value="mortgage">Mortgage Loan</option>
+                            <option value="creditCards">Credit Cards</option>
+                            <option value="personal">Personal Loan</option>
+                        </select>
+                    </div>
+                    <div class="mobileCreditScoreContainer">
+                        <div id="mobileCreditScore">720</div>
+                        <div>Credit score</div>
+                    </div>
+
+                </div>
+                <div class="column right">
+                    Average loan amount
+                    <span id="avgLoanAmount">--</span>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="mobileSections">
+                    <div class="mobileSection excellent">
+                        <div class="mobileRating">Excellent</div>
+                        <div class="mobileRange">800 - 850</div>
+                    </div>
+                    <div class="mobileSection veryGood">
+                        <div class="mobileRating">Very Good</div>
+                        <div class="mobileRange">740 - 799</div>
+                    </div>
+                    <div class="mobileSection good">
+                        <div class="mobileRating">Good</div>
+                        <div class="mobileRange">670 - 739</div>
+                    </div>
+                    <div class="mobileSection fair">
+                        <div class="mobileRating">Fair</div>
+                        <div class="mobileRange">580 - 669</div>
+                    </div>
+                    <div class="mobileSection poor">
+                        <div class="mobileRating">Poor</div>
+                        <div class="mobileRange">300 - 579</div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="scoreSections">
+                        <div class="poor scoreSection">Poor</div>
+                        <div class="fair scoreSection">Fair</div>
+                        <div class="good scoreSection">Good</div>
+                        <div class="very-good scoreSection">Very Good</div>
+                        <div class="excellent scoreSection">Excellent</div>
+                    </div>
+                    <input type="range" orient="vertical" min="300" max="850" value="720" id="inputRange"
+                        data-thumbwidth="20">
+                    <output name="rangeVal">720</output>
+                    <div class="scoreIntervals">
+                        <div class="poor scoreInterval">300</div>
+                        <div class="fair scoreInterval">580</div>
+                        <div class="good scoreInterval">670</div>
+                        <div class="very-good scoreInterval">740</div>
+                        <div class="excellent scoreInterval">800</div>
+                        <div class="perfect scoreInterval">850</div>
+                    </div>
+                </div>
+                <div class="mobileAveragesContainer">
+                    <div class="mobileAvgIntContainer">
+                        <div>Average Interest Cost</div>
+                        <div id="mobileAvgInterestCost">--</div>
+                    </div>
+                    <div class="mobileAvgMonthContainer">
+                        <div>Monthly Payment</div>
+                        <div id="mobileAvgMonthlyPayment">--</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="averages-container">
+                <div class="avg-interest-container">
+                    Average Interest Cost
+                    <span id="avgInterestCost">--</span>
+                </div>
+                <div class="avg-monthly-container">
+                    Monthly Payment
+                    <span id="avgMonthlyPayment">--</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="dynamic-disclaimer"></div>
+        <div class="row px-md-13 px-0">
+            <div class="col-lg-5 col-md-5 col-sm-12 offset-lg-1 offset-md-1">
+                <button class="button w-100">Get started</button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <button class="button-light w-100 my-6 my-md-0 mb-0">Learn more</button>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <hr>
+    </hr>
+    <!--====== costing you end ======-->
+
 
 
     <!-- ******************************* Features ******************************* -->

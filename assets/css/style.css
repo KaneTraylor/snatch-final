@@ -85,11 +85,6 @@ body {
 }
 
 /* @media (min-width: 577px){
-<<<<<<< Updated upstream
-    
-=======
-
->>>>>>> Stashed changes
 } */
 .header-image {
     position: absolute;
@@ -319,9 +314,9 @@ ul.sub-list li a {
 }
 
 .banner-img {
-    width: 481px;
+    width: 600px;
     position: relative;
-    bottom: -115px;
+    bottom: -05px;
 }
 
 .main .content h1 {
@@ -370,9 +365,10 @@ ul.sub-list li a {
 }
 
 .ready-for-liftoff .banner-img-mb {
-    width: 223px;
+    width: 303px;
     position: absolute;
-    top: 0;
+    top: 10;
+    margin-bottom: 120px;
     z-index: -1;
 }
 
@@ -1394,4 +1390,635 @@ ul.sub-list li a {
 
 .logo.Link_module_link__2e122c45 {
     display: none !important;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro .header {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    padding: 50px 0px 30px;
+}
+
+.intro .subheader {
+    font-size: 25px;
+    line-height: 42px;
+    padding-bottom: 30px;
+}
+
+.loan-type-info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 50px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+
+.loan-type-info-container .column {
+    display: flex;
+}
+
+.mobileAveragesContainer {
+    display: none;
+}
+
+.mobileCreditScoreContainer {
+    display: none;
+}
+
+div.dd-label {
+    position: absolute;
+    background: white;
+    pointer-events: none;
+    display: none;
+}
+
+#loanType {
+    display: none;
+}
+
+.loan-widget {
+    max-width: 1500px;
+    padding: 0px;
+    background-color: white;
+    margin: auto;
+}
+
+.slider-container {
+    position: relative;
+    height: 77px;
+    width: 700px;
+    border: none;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider {
+    position: absolute;
+}
+
+.slider>input {
+    background: transparent;
+    box-sizing: border-box;
+    border: none;
+    width: 690px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.slider>input::-webkit-slider-runnable-track {
+    border-radius: 4px;
+    height: 25px;
+    background: linear-gradient(to right, #E25656, #E25656 50.75%, transparent 50.75%, transparent 51.25%, #EA8B24 51.25%, #EA8B24 67.1%, transparent 67.1%, transparent 67.6%, #F4CE4D 67.6%, #F4CE4D 79.75%, transparent 79.75%, transparent 80.25%, #62BA96 80.25%, #62BA96 90.75%, transparent 90.75%, transparent 91.25%, #33A1FD 91.25%, #33A1FD 100%)
+}
+
+.slider>input::-moz-range-track {
+    border-radius: 4px;
+    height: 25px;
+    background: linear-gradient(to right, #E25656, #E25656 50.75%, transparent 50.75%, transparent 51.25%, #EA8B24 51.25%, #EA8B24 67.1%, transparent 67.1%, transparent 67.6%, #F4CE4D 67.6%, #F4CE4D 79.75%, transparent 79.75%, transparent 80.25%, #62BA96 80.25%, #62BA96 90.75%, transparent 90.75%, transparent 91.25%, #33A1FD 91.25%, #33A1FD 100%)
+}
+
+input[type="range"]::-webkit-media-slider-thumb {
+    background: transparent;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+    margin-top: -50px;
+}
+
+.slider>input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+    margin-top: -50px;
+}
+
+.slider>input::-moz-range-thumb {
+    background: transparent;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+    margin-top: -50px;
+}
+
+output {
+    position: absolute;
+    top: -39px;
+    margin-left: -55px;
+    display: block;
+    width: 110px;
+    height: 85px;
+    background-image: url(../images/slider-thumb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 75px;
+    text-align: center;
+    pointer-events: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+input[type=range]:active+output {
+    display: block;
+    margin-left: 0px;
+    transform: translateX(-50%);
+}
+
+.mobileSections {
+    display: none;
+}
+
+.slider-container .slider .scoreSections {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    font-family: "azo-sans-web", sans-serif
+}
+
+.slider-container .slider .scoreSections .poor {
+    width: 342px;
+}
+
+.slider-container .slider .scoreSections .fair {
+    width: 112px;
+}
+
+.slider-container .slider .scoreSections .good {
+    width: 90px;
+}
+
+.slider-container .slider .scoreSections .very-good {
+    width: 64px;
+}
+
+.slider-container .slider .scoreSections .excellent {
+    width: 70px;
+}
+
+.slider-container .slider .scoreIntervals {
+    display: flex;
+    position: absolute;
+    margin-left: -2px;
+    margin-top: 1px;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: left;
+    color: #747476;
+    font-family: "trade-gothic-next-lt-pro", sans-serif;
+}
+
+.slider-container .slider .scoreIntervals .poor {
+    width: 342px;
+}
+
+.slider-container .slider .scoreIntervals .fair {
+    width: 110px;
+}
+
+.slider-container .slider .scoreIntervals .good {
+    width: 85px;
+}
+
+.slider-container .slider .scoreIntervals .very-good {
+    width: 74px;
+}
+
+.slider-container .slider .scoreIntervals .excellent {
+    width: 59px;
+}
+
+.averages-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    line-height: 26px;
+    color: #747476;
+    font-family: 'azo-sans-web', sans-serif;
+    padding: 30px 10px 20px;
+}
+
+.averages-container span,
+.column.right span {
+    margin-left: 15px;
+    color: #00214F;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.avg-interest-container {
+    display: flex;
+}
+
+.avg-monthly-container {
+    display: flex;
+}
+
+section.credit-costing-you-slider .disclaimer {
+    margin: 0 auto;
+}
+
+section.credit-costing-you-slider .cta-block {
+    margin: 0 auto;
+}
+
+/* CUSTOM SELECT MENU */
+.custom-select {
+    position: relative;
+    font-size: 21px;
+    width: 300px;
+    height: fit-content;
+    box-shadow: rgba(51, 146, 255) 0px 1px 4px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: white;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #747476 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #747476 transparent;
+    top: 10px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    font-weight: 500;
+    color: #747476;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: #747476;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 5px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    color: rgb(51, 146, 255)
+}
+
+#dynamic-disclaimer {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 40px auto;
+    max-width: 916px;
+    color: #4B4C52;
+}
+
+.disclaimer-link {
+    color: #4B4C52;
+    text-decoration: underline;
+}
+
+/************ RESPONSIVE STYLING *****************/
+
+@media (max-width: 800px) {
+
+    #dynamic-disclaimer {
+        font-size: 9px;
+        line-height: 11px;
+        margin: 30px auto;
+        max-width: 400px;
+    }
+
+    .intro .header {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .intro .subheader {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .loan-widget {
+        max-width: 300px;
+    }
+
+    .custom-select {
+        font-size: 16px;
+        width: 153px;
+        margin: -12px 0px 0px -12px;
+    }
+
+    /* Style the arrow inside the select element: */
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #747476 transparent transparent transparent;
+    }
+
+    /* Point the arrow upwards when the select box is open (active): */
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #747476 transparent;
+        top: 8px;
+    }
+
+    /* style the items (options), including the selected item: */
+    .select-items div,
+    .select-selected {
+        padding: 4px 12px;
+    }
+
+
+    .loan-type-info-container {
+        flex-wrap: wrap;
+    }
+
+    .loan-type-info-container .column.left {
+        position: relative;
+        width: 100%;
+    }
+
+    .loan-type-info-container .column.right {
+        position: relative;
+        width: 110%;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 13px 0px 0px -8px;
+        padding-top: 8px;
+        border-top: 1px solid #D1D0D4;
+    }
+
+    .loan-type-info-container .column.right span {
+        font-size: 16px;
+        position: absolute;
+        right: -8px;
+        width: 75px;
+        text-align: center;
+        margin-right: 8px;
+    }
+
+    .mobileCreditScoreContainer {
+        display: block;
+        position: absolute;
+        right: -8px;
+        font-size: 15px;
+        font-weight: 500;
+        top: -18px;
+    }
+
+    .mobileCreditScoreContainer #mobileCreditScore {
+        color: #00214F;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: -6px;
+    }
+
+    .averages-container {
+        flex-wrap: wrap;
+    }
+
+
+    .slider-container {
+        width: initial;
+        margin-top: 110px;
+        margin-bottom: 90px;
+        display: flex;
+    }
+
+    .slider {
+        position: absolute;
+        left: -37px;
+    }
+
+    .slider #inputRange {
+        transform: rotate(-90deg);
+        touch-action: none;
+    }
+
+    .slider>input {
+        /* transform: rotate(-90deg); */
+        width: 375px;
+        height: 88px;
+    }
+
+    .slider>input::-webkit-slider-runnable-track {
+        border-radius: 4px;
+        width: 375px;
+        height: 88px;
+        background: linear-gradient(to right, #E25656, #E25656 50.25%, transparent 50.25%, transparent 51.75%, #EA8B24 51.75%, #EA8B24 66.6%, transparent 66.6%, transparent 68.1%, #F4CE4D 68.1%, #F4CE4D 79.25%, transparent 79.25%, transparent 80.75%, #62BA96 80.75%, #62BA96 90.25%, transparent 90.25%, transparent 91.75%, #33A1FD 91.75%, #33A1FD 100%)
+    }
+
+    .slider>input::-moz-range-track {
+        border-radius: 4px;
+        width: 375px;
+        height: 88px;
+        background: linear-gradient(to right, #E25656, #E25656 50.25%, transparent 50.25%, transparent 51.75%, #EA8B24 51.75%, #EA8B24 66.6%, transparent 66.6%, transparent 68.1%, #F4CE4D 68.1%, #F4CE4D 79.25%, transparent 79.25%, transparent 80.75%, #62BA96 80.75%, #62BA96 90.25%, transparent 90.25%, transparent 91.75%, #33A1FD 91.75%, #33A1FD 100%)
+    }
+
+    output {
+        display: none;
+    }
+
+    input[type=range]:active+output {
+        display: none;
+    }
+
+    input[type="range"]::-webkit-media-slider-thumb {
+        background: white;
+        margin: 0px;
+        border-radius: 6px;
+        height: 88px;
+        width: 15px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    .slider>input::-webkit-slider-thumb {
+        background: white;
+        margin: 0px;
+        border-radius: 6px;
+        height: 88px;
+        width: 15px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    .slider>input::-moz-range-thumb {
+        background: white;
+        margin: 0px;
+        border-radius: 6px;
+        height: 88px;
+        width: 15px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    .slider-container .slider .scoreSections {
+        display: none;
+    }
+
+    .slider-container .slider .scoreIntervals {
+        display: none;
+        /*position: absolute;
+    margin-left: -2px;
+    margin-top: 1px;
+    */
+    }
+
+    .mobileRating {
+        font-size: 14px;
+        line-height: 18px;
+        color: #00214F;
+    }
+
+    .mobileRange {
+        font-size: 11px;
+        line-height: 14px;
+        color: #747476;
+    }
+
+    .mobileSections {
+        display: block;
+        position: absolute;
+        top: -123px;
+        left: 28px;
+        text-align: right;
+    }
+
+    .mobileSection.veryGood {
+        margin-top: 4px;
+    }
+
+    .mobileSection.good {
+        margin-top: 11px;
+    }
+
+    .mobileSection.fair {
+        margin-top: 22px;
+    }
+
+    .mobileSection.poor {
+        margin-top: 85px;
+    }
+
+    .mobileAveragesContainer {
+        display: block;
+        position: absolute;
+        right: 7px;
+        max-width: 90px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #747476;
+    }
+
+    #mobileAvgInterestCost,
+    #mobileAvgMonthlyPayment {
+        font-size: 16px;
+        color: #00214F;
+        margin-top: 4px;
+        font-weight: 500;
+    }
+
+    .mobileAvgIntContainer {
+        margin-top: -99px;
+        margin-bottom: 55px;
+    }
+
+    .avg-interest-container,
+    .avg-monthly-container {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobileAveragesContainer {
+        display: none;
+    }
+
+    .avg-interest-container,
+    .avg-monthly-container {
+        display: flex;
+        width: 89%;
+        justify-content: space-evenly;
+        margin: 5px auto;
+    }
+
+    .averages-container {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .averages-container span {
+        font-size: 16px;
+    }
+
+    .slider-container {
+        margin-bottom: 130px;
+    }
+}
+
+@media (max-width: 350px) {
+    .mobileCreditScoreContainer {
+        font-size: 13px;
+        right: -20px;
+    }
+
+    .loan-type-info-container .column.right {
+        font-size: 13px;
+    }
+
+    .loan-type-info-container .column.right span {
+        font-size: 15px;
+        right: -28px;
+    }
+
+    .averages-container {
+        font-size: 13px;
+    }
+
+    .averages-container span {
+        font-size: 15px;
+    }
+
 }
