@@ -17,7 +17,7 @@ body {
     line-height: 21px;
     padding: 11px 16px;
     min-height: 45px;
-    background-color: #fcae03;
+    background-color: #33c5c5;
     width: 311px;
     font-family: var(--self-font-family);
     -webkit-appearance: none;
@@ -85,7 +85,11 @@ body {
 }
 
 /* @media (min-width: 577px){
+<<<<<<< Updated upstream
     
+=======
+
+>>>>>>> Stashed changes
 } */
 .header-image {
     position: absolute;
@@ -161,7 +165,7 @@ body {
     line-height: 18px;
     padding: 6px 16px;
     min-height: 32px;
-    background: var(--cta-orange);
+    background-color: #33c5c5;
     cursor: pointer;
     font-family: var(--self-font-family);
     -webkit-appearance: none;
