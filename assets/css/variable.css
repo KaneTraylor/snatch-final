@@ -1,6 +1,7 @@
-
 :root {
     --bs-blue: #0d6efd;
+    --azure-blue: #3392ff;
+    --mint-green: #33c5c5;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -112,9 +113,9 @@
     --success: var(--dark-green);
     --black: #000;
     --white: #fff;
-    --self-font-family: Montserrat,sans-serif;
+    --self-font-family: Montserrat, sans-serif;
     --extra-bold: 800;
-     --bold: 700;
+    --bold: 700;
     --semi-bold: 600;
     --medium: 500;
     --regular: 400;
@@ -143,8 +144,8 @@
     --caption-2-bold: var(--bold) 11px/13px var(--self-font-family);
     --numbered-label: var(--extra-bold) 40px/40px var(--self-font-family);
     --numbered-label-large: var(--extra-bold) 56px/56px var(--self-font-family);
-    --card-shadow: 0px 2px 12px rgba(0,0,0,0.15);
-    --card-shadow-large: 0px 4px 24px rgba(0,0,0,0.25);
+    --card-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+    --card-shadow-large: 0px 4px 24px rgba(0, 0, 0, 0.25);
     --corner-radius-large: 20px;
     --corner-radius-medium: 16px;
     --corner-radius-small: 12px;

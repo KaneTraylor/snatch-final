@@ -36,6 +36,29 @@ body {
     display: inline-flex;
 }
 
+.button-alternate {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 11px 16px;
+    min-height: 45px;
+    background-color: #3392ff;
+    width: 311px;
+    font-family: var(--self-font-family);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    font-weight: var(--semi-bold);
+    color: var(--primary-text);
+    border-radius: var(--corner-radius-small);
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: inline-flex;
+}
+
 .button-light {
     font-size: 16px;
     line-height: 21px;
@@ -967,13 +990,13 @@ ul.sub-list li a {
 /* *************** Pay rent
  ******************************* */
 .pay-rent {
-    background: var(--dark-green);
+    background: var(--mint-green);
     color: var(--white);
     padding: 68px 0px 0;
 }
 
 .pay-rent h1 {
-    background: var(--dark-green);
+    background: var(--mint-green);
     color: var(--white);
     font-size: 40px;
     line-height: 48px;
