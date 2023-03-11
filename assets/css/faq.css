@@ -1,0 +1,228 @@
+.inner_wrap {
+    padding-top: 0
+}
+
+.inner_wrap.main-section {
+    background-color: #f1f4f8;
+    font-family: museo-sans,serif
+}
+
+.faq-wrapper {
+    margin: 60px auto;
+    max-width: 980px
+}
+
+#faq-header {
+    text-align: center;
+    padding: 0 20px
+}
+
+#faq-header h1 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    margin: 0 auto;
+    padding: 40px 0 20px
+}
+
+#faq-header .leader {
+    color: #4c4d52;
+    font-size: 20px;
+    font-weight: 300
+}
+
+#faq-header p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #3b3b3b;
+    max-width: 650px;
+    margin: 20px auto
+}
+
+.dd-menu-wrapper,.search-wrapper {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    text-align: left;
+    vertical-align: top
+}
+
+.dd-menu-wrapper button {
+    width: 90%;
+    border-radius: 5px;
+    background-color: #00214f;
+    border: 1px solid #00214f;
+    color: #1fd4c6;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    text-align: left;
+    padding: 15px 30px;
+    cursor: pointer
+}
+
+.dd-menu-wrapper button .arrow {
+    color: #fff;
+    float: right;
+    font-size: 22px
+}
+
+.dd-menu-wrapper .dd-menu {
+    display: none;
+    position: relative;
+    width: 90%;
+    background-color: #00214f;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 0 0;
+    margin-top: -10px
+}
+
+.dd-menu-wrapper .dd-menu hr {
+    border-color: #2e4970;
+    color: #2e4970;
+    width: 90%;
+    margin: 0 auto
+}
+
+.dd-menu-wrapper .dd-menu a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    text-decoration: none
+}
+
+.dd-menu-wrapper .dd-menu a:hover {
+    color: #1fd4c6
+}
+
+.search-wrapper input {
+    border-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgba(212,212,212,1);
+    padding: 14px 30px;
+    line-height: 16px;
+    background: #fff url(/content/dam/lexington-law/assets/images/search-icon.png) no-repeat 97% 14px;
+    background-size: 20px
+}
+
+.search-wrapper input::-webkit-search-cancel-button {
+    margin-right: 20px
+}
+
+#accordion {
+    padding: 0 20px
+}
+
+.segments {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(212,212,212,1);
+    margin: 15px auto
+}
+
+h2 {
+    font-size: 20px;
+    color: #00214f;
+    margin: 0;
+    font-weight: 300;
+    padding: 20px;
+    border-bottom: 1px solid #e4eaf2
+}
+
+h3.accordion-toggle {
+    padding: 20px;
+    margin: 0;
+    border-top: 1px solid #e4eaf2;
+    color: #00214f;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer
+}
+
+h3.accordion-toggle:after {
+    float: right;
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #c9c9cb;
+    border-right: 1px solid #c9c9cb;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    margin-top: 10px;
+    margin-right: 10px;
+    transform: rotate(45deg)
+}
+
+h3.accordion-toggle.open:after {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left: 1px solid #c9c9cb;
+    border-top: 1px solid #c9c9cb
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #7d7c82
+}
+
+.accordion-content p {
+    margin: 0;
+    padding: 0 0 20px
+}
+
+.accordion-content a {
+    color: #1fd4c6
+}
+
+@media (max-width: 767px) {
+    #faq-header {
+        padding-bottom:20px
+    }
+
+    .dd-menu-wrapper,.search-wrapper {
+        display: block;
+        width: 100%;
+        margin: 10px auto
+    }
+
+    .dd-menu-wrapper .dd-menu,.dd-menu-wrapper button {
+        width: 100%
+    }
+}
+
+@media (max-width: 500px) {
+    #faq-header h1 {
+        font-size:23px;
+        line-height: 28px
+    }
+
+    #faq-header .leader {
+        font-size: 18px;
+        line-height: 20px
+    }
+
+    h2 {
+        font-size: 18px;
+        padding: 10px 20px
+    }
+
+    h3.accordion-toggle {
+        font-size: 14px;
+        padding: 10px 20px
+    }
+
+    h3.accordion-toggle:after {
+        width: 7px;
+        height: 7px;
+        margin-top: 8px
+    }
+}
