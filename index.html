@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" overflow-x: hidden;>
 
 <head>
     <meta charset="UTF-8">
@@ -104,26 +104,47 @@
 
     
 
-    <!-- ******************************* Branding ******************************* -->
-    <section class="branding">
-        <div class="container">
-            <h1>Notable companies</h1>
-            <div class="row w-100 w-md-600px w-lg-100 mx-auto">
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
-                        alt="msn logo" class="" src="assets/images/brand/bizjournals.svg"></div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
-                        alt="msn logo" class="" src="assets/images/brand/cu2.svg"></div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
-                        alt="msn logo" class="" src="assets/images/brand/wsj.svg"></div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
-                        alt="msn logo" class="" src="assets/images/brand/americanBanker.svg"></div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
-                        alt="msn logo" class="" src="assets/images/brand/techCrunch.svg"></div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
-                        alt="msn logo" class="" src="assets/images/brand/yCombinator.svg"></div>
-            </div>
-        </div>
-    </section>
+   <!-- ******************************* Branding ******************************* -->
+<section class="branding">
+    <div class="container">
+      <h1>Notable companies</h1>
+      <div class="row w-100 w-md-600px w-lg-100 mx-auto">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/bizjournals.svg"></div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/cu2.svg"></div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/wsj.svg"></div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/americanBanker.svg"></div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/techCrunch.svg"></div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/yCombinator.svg"></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  window.addEventListener('scroll', function() {
+    const branding = document.querySelector('.branding');
+    const sticky = document.querySelector('.sticky-container');
+    const stickyHeight = sticky.offsetHeight;
+    const brandingBottom = branding.offsetTop + branding.offsetHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > brandingBottom) {
+      sticky.classList.remove('hide');
+    } else {
+      sticky.classList.add('hide');
+    }
+  });
+</script>
+  
+  <!-- ******************************* Sticky Button ******************************* -->
+  <div class="sticky-container visible">
+    <div class="text-wrapper-sticky">
+      <div class="text-heading-4 color-strong-on-inverse">Snatch</div>
+      <div class="text-regular color-strong-on-inverse">Build credit fast</div>
+    </div>
+    <button class="signup-button1">Sign up</button>
+  </div>
+
+  
 
     
     <!-------------Snatch can help---------->
@@ -618,14 +639,6 @@
           <p>No, your credit score is just one component of your credit report. We value inclusiveness and fairness, so we leave your credit report at the door.</a></p>
         </div>
     </section> <br> </br>
-
-    <div class="sticky-container">
-        <div class="text-wrapper-sticky">
-          <div class="text-heading-4 color-strong-on-inverse">Snatch</div>
-          <div class="text-regular color-strong-on-inverse">Build credit fast</div>
-        </div>
-        <button class="signup-button1">Sign up</button>
-      </div>
       
       
       
@@ -695,6 +708,29 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/faq.js"></script>
+    <script>
+        // select the sticky button element
+        const stickyButton = document.querySelector('.sticky-container');
+      
+        // get the position of the branding section relative to the top of the page
+        const brandingSection = document.querySelector('.branding');
+        const brandingSectionPosition = brandingSection.getBoundingClientRect().top;
+      
+        // add a scroll event listener to the window
+        window.addEventListener('scroll', function() {
+          // get the current vertical scroll position of the window
+          const scrollPosition = window.scrollY;
+      
+          // if the user has scrolled past the branding section
+          if (scrollPosition > brandingSectionPosition) {
+            // show the sticky button by removing the "hidden" class
+            stickyButton.classList.remove('hidden');
+          } else {
+            // hide the sticky button by adding the "hidden" class
+            stickyButton.classList.add('hidden');
+          }
+        });
+      </script>
 
 </body>
 

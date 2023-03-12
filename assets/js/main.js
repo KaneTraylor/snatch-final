@@ -581,3 +581,4 @@ function cycleMarquee() {
 }
 
 let cycleTimer = setInterval(cycleMarquee, 3000);
+

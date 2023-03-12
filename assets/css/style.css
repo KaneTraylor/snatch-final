@@ -2712,7 +2712,7 @@ footer i {
         text-align: center;
       }
 
-      @media (max-width: 767px) {
+      @media (min-width: 968px) {
         .styles_sticky-container__mobile {
             position: fixed;
             z-index: z(fixed-header);
@@ -2734,7 +2734,7 @@ footer i {
             background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%) !important;
         }
         
-        .styles_sticky-container__mobile.styles_hidden__fmBY7 {
+        .styles_sticky-container__mobile.styles_hidden {
             -webkit-transform: translateY(100%);
             transform: translateY(100%);
         }
@@ -2769,47 +2769,112 @@ footer i {
     }
     
    /* Base styles */
-   .sticky-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%) !important;
-    padding: 10px 20px;
-    border-radius: 20px;
-    width: 350px;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99999;
+
+   /* Mobile-only sticky button */
+@media (max-width: 767px) {
+    .sticky-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%) !important;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 350px;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99999;
+    }
+    
+    .text-wrapper-sticky {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 20px;
+    }
+    
+    .text-heading-4 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+    
+    .text-regular {
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    
+    .signup-button1 {
+      background-color: white;
+      border-radius: 30px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .sticky-container.desktop-only {
+      display: none;
+    }
   }
   
-  .text-wrapper-sticky {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 20px;
+  /* Desktop sticky button */
+  @media (min-width: 768px) {
+    .sticky-container.desktop-only {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%) !important;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 350px;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99999;
+    }
+    
+    .text-wrapper-sticky.desktop-only {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 20px;
+    }
+    
+    .text-heading-4.desktop-only {
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+    
+    .text-regular.desktop-only {
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    
+    .signup-button1.desktop-only {
+      background-color: white;
+      border-radius: 30px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .sticky-container {
+      display: none;
+    }
   }
   
-  .text-heading-4 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFFFFF;
-  }
   
-  .text-regular {
-    font-size: 16px;
-    color: #FFFFFF;
-  }
   
-  .signup-button1 {
-    background-color: white;
-    border-radius: 30px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+  
+  
+  
   
