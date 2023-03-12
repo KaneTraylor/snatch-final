@@ -96,11 +96,38 @@
             </div>
         </div>
     </section>
+
+    
+  <script>
+    window.addEventListener('scroll', function() {
+      const branding = document.querySelector('.branding');
+      const sticky = document.querySelector('.sticky-container');
+      const stickyHeight = sticky.offsetHeight;
+      const brandingBottom = branding.offsetTop + branding.offsetHeight;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > brandingBottom) {
+        sticky.classList.remove('hide');
+      } else {
+        sticky.classList.add('hide');
+      }
+    });
+  </script>
+    
+    <!-- ******************************* Sticky Button ******************************* -->
+    <div class="sticky-container visible">
+      <div class="text-wrapper-sticky">
+        <div class="text-heading-4 color-strong-on-inverse">Snatch</div>
+        <div class="text-regular color-strong-on-inverse">Build credit fast</div>
+      </div>
+      <button class="signup-button1">Sign up</button>
+    </div>
+  
                            
                                         <section class="credit-account_how-it-works-container__Xr_Xe">
                                             <div class="page_align_page-align__BBPm1">
                                                 <div class="page_align_content__RoeO0 credit-account_how-it-works__BDaYX">
-                                                    <header>How it works</header>
+                                                    <header>Here we go!</header>
                                                     <div class="captioned_image_captioned-image__LdiGn captioned_image_right__bhWy6 captioned_image_show__ZrW2u credit-account_step__2p_IO">
                                                         <div class="captioned_image_image-container__e9IUC">
                                                             <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative">
