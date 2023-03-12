@@ -519,10 +519,10 @@ $("div.select-items div")[3].click()
 
 });
 
-const marquee = document.querySelector('.marquee-wrapper');
-const marqueeContent = marquee.querySelector('div');
+const marqueeWrapper = document.querySelector('.marquee-wrapper');
+const marqueeContent = marqueeWrapper.querySelector('div');
 const marqueeItems = Array.from(marqueeContent.querySelectorAll('div'));
-const speed = 1;
+const speed = 6;
 const pauseTime = 1000;
 const transitionTime = 500;
 
@@ -535,15 +535,19 @@ marqueeItems.forEach(item => {
 marqueeContent.innerHTML += marqueeContent.innerHTML;
 
 function marqueeScroll() {
-  if (marquee.scrollLeft % marqueeItems[0].offsetWidth === 0) {
+  if (marqueeWrapper.matches(':hover')) {
+    return;
+  }
+  
+  if (marqueeWrapper.scrollLeft % marqueeItems[0].offsetWidth === 0) {
     clearInterval(marqueeTimer);
     setTimeout(() => {
       marqueeTimer = setInterval(marqueeScroll, speed);
     }, pauseTime);
   }
-  marquee.scrollLeft += 1;
-  if (marquee.scrollLeft >= marqueeContent.scrollWidth / 2) {
-    marquee.scrollLeft = 0;
+  marqueeWrapper.scrollLeft += 1;
+  if (marqueeWrapper.scrollLeft >= marqueeContent.scrollWidth / 2) {
+    marqueeWrapper.scrollLeft = 0;
   }
 }
 
