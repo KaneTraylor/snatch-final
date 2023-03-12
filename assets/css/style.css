@@ -1487,17 +1487,15 @@ ul.sub-list li a {
         margin-bottom: 30px;
     }
 
-.logo.Link_module_link__2e122c45 {
-    display: none !important;
-}
+
 
 .intro {
     text-align: center;
 }
 
 .intro .header {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 35px;
+    line-height: 65px;
     font-weight: 600;
     padding: 50px 0px 30px;
 }
@@ -1573,14 +1571,15 @@ div.dd-label {
 .slider>input::-webkit-slider-runnable-track {
     border-radius: 4px;
     height: 25px;
-    background: linear-gradient(to right, #E25656, #E25656 50.75%, transparent 50.75%, transparent 51.25%, #EA8B24 51.25%, #EA8B24 67.1%, transparent 67.1%, transparent 67.6%, #F4CE4D 67.6%, #F4CE4D 79.75%, transparent 79.75%, transparent 80.25%, #62BA96 80.25%, #62BA96 90.75%, transparent 90.75%, transparent 91.25%, #33A1FD 91.25%, #33A1FD 100%)
+    background: linear-gradient(to right, #fa4a3e, #fa4a3e 50.75%, transparent 50.75%, transparent 51.25%, #ff6600 51.25%, #ff6600 67.1%, transparent 67.1%, transparent 67.6%, #ffff00 67.6%, #ffff00 79.75%, transparent 79.75%, transparent 80.25%, #00ff66 80.25%, #00ff66 90.75%, transparent 90.75%, transparent 91.25%, #00bfff 91.25%, #00bfff 100%);
 }
 
 .slider>input::-moz-range-track {
     border-radius: 4px;
     height: 25px;
-    background: linear-gradient(to right, #E25656, #E25656 50.75%, transparent 50.75%, transparent 51.25%, #EA8B24 51.25%, #EA8B24 67.1%, transparent 67.1%, transparent 67.6%, #F4CE4D 67.6%, #F4CE4D 79.75%, transparent 79.75%, transparent 80.25%, #62BA96 80.25%, #62BA96 90.75%, transparent 90.75%, transparent 91.25%, #33A1FD 91.25%, #33A1FD 100%)
+    background: linear-gradient(to right, #fa4a3e, #fa4a3e 50.75%, transparent 50.75%, transparent 51.25%, #ff6600 51.25%, #ff6600 67.1%, transparent 67.1%, transparent 67.6%, #ffff00 67.6%, #ffff00 79.75%, transparent 79.75%, transparent 80.25%, #00ff66 80.25%, #00ff66 90.75%, transparent 90.75%, transparent 91.25%, #00bfff 91.25%, #00bfff 100%);
 }
+
 
 input[type="range"]::-webkit-media-slider-thumb {
     background: transparent;
@@ -2146,14 +2145,25 @@ section.credit-costing-you-slider .cta-block {
     
     .green-background {
     color: #33c5c5;
-    background-image: url(./assets/images/green-blob.png);
+    }
+
+    .white-txt{
+
+        color: #FFFFFF;
     }
     
     @media (max-width: 960px) {
     .snatch-can-help-heading {
-    font-size: 35px;
+    font-size: 55px;
     line-height: 64px;
     }
+    }
+
+    @media (min-width: 960px) {
+        .snatch-can-help-heading {
+        font-size: 35px;
+        line-height: 64px;
+        }
     }
     
     .block-row {
@@ -2323,14 +2333,39 @@ section.credit-costing-you-slider .cta-block {
         max-width: 300px;
         }
         }
+
         
-        .no-credit-check-container p+header {
-        margin-top: 16px;
-        color: #fae626;
-        }
+.new-way-credit {
+    padding-bottom: 0
+}
+
+@media(min-width: 960px) {
+    .new-way-credit {
+        -ms-flex-direction:row;
+        flex-direction: row
+    }
+}
+
+.new-way-credit img {
+    width: 100%;
+    max-width: 350px
+}
+
+@media(min-width: 960px) {
+    .new-way-credit img {
+        max-width:400px
+    }
+}
+            
+            .no-credit-check-container p+header {
+            margin-top: 16px;
+            color: #ffffff;
+            font-size: 24px;
+            background-color: #fae626;
+            }
         
         .easy-automatic-container {
-        padding-bottom: 0;
+        padding-bottom: 5;
         }
         
         @media(min-width: 960px) {
@@ -2340,6 +2375,12 @@ section.credit-costing-you-slider .cta-block {
         background-color: #00adee;
         }
         }
+
+        @media(max-width: 960px) {
+            .credit-journey-container {
+            background-color: #00adee;
+            }
+            }
         
         .line {
         width: calc(100% + 10px);
@@ -2415,68 +2456,7 @@ footer i {
     }
 }
 
-.styles_quotes-section__iuM_8 {
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 96px 48px;
-    background: var(--dugout);
-    text-align: center
-}
 
-.styles_quotes-section__iuM_8>header {
-    font-size: 32px;
-    font-weight: 500
-}
-
-.styles_quotes-section__iuM_8 .styles_note__g3U6I {
-    margin-bottom: 80px;
-    font-size: 24px;
-    line-height: 30px
-}
-
-.styles_quotes-section__iuM_8 .styles_note__g3U6I>div {
-    vertical-align: middle
-}
-
-.styles_quotes-section__iuM_8 .styles_note__g3U6I .styles_nerdwallet-img__xMIYu {
-    margin-left: 8px
-}
-
-.styles_quotes-section__iuM_8 .styles_quote__8T0yl {
-    display: -ms-flexbox;
-    display: flex;
-    width: 324px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 24px 32px;
-    margin: 0 8px;
-    background: var(--white);
-    border-radius: 16px;
-    line-height: 1.5
-}
-
-.styles_quotes-section__iuM_8 .styles_quote__8T0yl>:first-child {
-    -ms-flex: 1 1;
-    flex: 1 1;
-    margin-bottom: 24px
-}
-
-.styles_homepage-marquee__oGjZl {
-    display: -ms-flexbox;
-    display: flex;
-    width: calc(100% + 96px);
-    margin: 0 -48px;
-    text-align: left
-}
 
 /* <!--====== SUPPORT PART START ======--> */
 .support {
@@ -2616,3 +2596,85 @@ footer i {
     }
 }
 
+.quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 96px 48px;
+    background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%) !important;
+    text-align: center;
+    }
+    
+    .quote-wrapper header {
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+    }
+    
+    .quote-wrapper .note-wrapper {
+    margin-bottom: 80px;
+    font-size: 24px;
+    line-height: 30px;
+    }
+    
+    .note-wrapper>div {
+    vertical-align: middle;
+    }
+    
+    .note-wrapper .nerdwallet-img {
+    margin-left: 8px;
+    }
+    
+    .quote-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+    
+    .quote {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    padding: 24px 32px;
+    margin: 0 8px;
+    background: var(--white);
+    border-radius: 16px;
+    line-height: 1.5;
+    }
+    
+    .quote>div:first-child {
+    flex: 1 1;
+    margin-bottom: 24px;
+    }
+    
+    .marquee-wrapper {
+    position: relative;
+    max-width: -webkit-fit-content;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+    overflow-x: hidden;
+    }
+    
+    .marquee-wrapper > div {
+    position: relative;
+    display: flex;
+    }
+    
+    .marquee-wrapper > div:first-of-type {
+    position: absolute;
+    }
+    
+    .marquee-wrapper:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 40px 0 10px -20px #fff, inset -40px 0 10px -20px #fff;
+    pointer-events: none;
+    }
