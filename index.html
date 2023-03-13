@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/home-form.css">
     <link rel="stylesheet" href="./assets/css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -96,85 +108,93 @@
                     <div class="img">
                         <img src="./assets/images/Icon_Pricing.svg" alt="">
                     </div>
-                    Snatch Builder
+                    How it works
                 </a>
             </div>
         </div>
     </section>
 
-    
 
-   <!-- ******************************* Branding ******************************* -->
-<section class="branding">
-    <div class="container">
-      <h1>Notable companies</h1>
-      <div class="row w-100 w-md-600px w-lg-100 mx-auto">
-        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/bizjournals.svg"></div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/cu2.svg"></div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/wsj.svg"></div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/americanBanker.svg"></div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/techCrunch.svg"></div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100" alt="msn logo" class="" src="assets/images/brand/yCombinator.svg"></div>
-      </div>
+
+    <!-- ******************************* Branding ******************************* -->
+    <section class="branding">
+        <div class="container">
+            <h1>Notable companies</h1>
+            <div class="row w-100 w-md-600px w-lg-100 mx-auto">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
+                        alt="msn logo" class="" src="assets/images/brand/bizjournals.svg"></div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
+                        alt="msn logo" class="" src="assets/images/brand/cu2.svg"></div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
+                        alt="msn logo" class="" src="assets/images/brand/wsj.svg"></div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
+                        alt="msn logo" class="" src="assets/images/brand/americanBanker.svg"></div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
+                        alt="msn logo" class="" src="assets/images/brand/techCrunch.svg"></div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center"><img width="100"
+                        alt="msn logo" class="" src="assets/images/brand/yCombinator.svg"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const branding = document.querySelector('.branding');
+            const sticky = document.querySelector('.sticky-container');
+            const stickyHeight = sticky.offsetHeight;
+            const brandingBottom = branding.offsetTop + branding.offsetHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > brandingBottom) {
+                sticky.classList.remove('hide');
+            } else {
+                sticky.classList.add('hide');
+            }
+        });
+    </script>
+
+    <!-- ******************************* Sticky Button ******************************* -->
+    <div class="sticky-container visible">
+        <div class="text-wrapper-sticky">
+            <div class="text-heading-4 color-strong-on-inverse">Snatch</div>
+            <div class="text-regular color-strong-on-inverse">Build credit fast</div>
+        </div>
+        <button class="signup-button1">Sign up</button>
     </div>
-  </section>
 
-  <script>
-  window.addEventListener('scroll', function() {
-    const branding = document.querySelector('.branding');
-    const sticky = document.querySelector('.sticky-container');
-    const stickyHeight = sticky.offsetHeight;
-    const brandingBottom = branding.offsetTop + branding.offsetHeight;
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (scrollTop > brandingBottom) {
-      sticky.classList.remove('hide');
-    } else {
-      sticky.classList.add('hide');
-    }
-  });
-</script>
-  
-  <!-- ******************************* Sticky Button ******************************* -->
-  <div class="sticky-container visible">
-    <div class="text-wrapper-sticky">
-      <div class="text-heading-4 color-strong-on-inverse">Snatch</div>
-      <div class="text-regular color-strong-on-inverse">Build credit fast</div>
-    </div>
-    <button class="signup-button1">Sign up</button>
-  </div>
 
-  
 
-    
+
     <!-------------Snatch can help---------->
     <section class="row align-items-center">
         <div class="col text-center snatch-can-help-heading">
             <div class="container"> <br> </br>
-                <h1 class="general-h1"> Bad credit? No credit? <br> <span class="green-background">Snatch can help.</span> </h1>
-        </div>
+                <h1 class="general-h1"> Bad credit? No credit? <br> <span class="green-background">Snatch can
+                        help.</span> </h1>
+            </div>
     </section>
-    
+
     <section class="block-row">
         <div class="landing-block new-way-credit">
             <div class="txt-side">
                 <header class="text:heading-3++">A new way to build credit</header>
-                <p class="text:large">Snatch helps you to improve your credit score by establishing positive payment history</p>
+                <p class="text:large">Snatch helps you to improve your credit score by establishing positive payment
+                    history</p>
                 <div class="col-lg-5 col-md-5 col-sm-12 offset-lg-1 offset-md-1">
-                  <br>  <button class="button w-100">Get started</button>
+                    <br> <button class="button w-100">Get started</button>
                 </div>
             </div>
             <div class="img-side">
-                <img alt="phone with app" src="./assets/images/credit-ticker.png"/>
+                <img alt="phone with app" src="./assets/images/credit-ticker.png" />
             </div>
         </div>
     </section>
-    
+
     <section class="block-row">
         <div class="landing-block green-background no-credit-check-container">
             <header>No credit check</header>
             <p>You're more than just a score to us.</p>
-            <header>Plans are as low as $10/mo</header>
+            <header class="text-center"> Plans are as low as $10/mo</header>
             <p>(Can't beat that)</p>
         </div>
         <div class="landing-block easy-automatic-container">
@@ -183,24 +203,27 @@
                 <h3>With the optional Autopay, never worry about due dates.</h3>
             </div>
             <div class="img-bottom">
-                <img alt="easy payment progress" src="./assets/images/processGraphic.png"/>
-            </div>
-        </div>
-    </section>
-    
-    <section class="block-row">
-        <div class="landing-block credit-journey-container">
-            <div class="txt-side white-txt">
-                <header>Learn as you build</header>
-                <p class="text:large">With our credit monitoring reports, see insights like problem areas so you stay on track to increase your score.</p>
-            </div>
-            <div class="img-side">
-                <img alt="credit history" src="./assets/images/learn-as.png"/>
+                <img alt="easy payment progress" src="./assets/images/processGraphic.png" />
             </div>
         </div>
     </section>
 
-    
+    <section class="block-row">
+        <div class="landing-block credit-journey-container">
+            <div class="txt-side white-txt">
+                <header>Learn as you build</header>
+                <p class="text:large">With any plan you choose, recieve access to educational videos and courses to help
+                    you better
+                    navigate financial literacy.
+                </p>
+            </div>
+            <div class="img-side">
+                <img alt="credit history" src="./assets/images/learn-as.png" />
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- ******************************* How it works ******************************* -->
     <section class="how-it-works">
@@ -232,8 +255,8 @@
         </div>
     </section>
 
-     <!-- ******************************* Start building history ******************************* -->
-     <section class="start-building-history">
+    <!-- ******************************* Start building history ******************************* -->
+    <section class="start-building-history">
         <div class="container">
             <div class="row">
                 <div
@@ -242,7 +265,7 @@
                         <img height="60" width="60" class="img" alt="credit card image for building credit"
                             src="assets/images/Icon_No_Credit_History.svg">
                         <h4>No credit history?</h4>
-                        <p>Don't worry about it. You got us. We don't mind if you haven't established credit yet. 
+                        <p>Don't worry about it. You got us. We don't mind if you haven't established credit yet.
                             It's what were for.
                         </p>
                         <p class="link">
@@ -268,13 +291,14 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
 
     <!--====== costing you start ======-->
     <section class="container credit-costing-you-slider">
         <div class="intro">
-            <div> <h1 class="header">
+            <div>
+                <h1 class="header">
                     Bad credit can cost.. </h1>
             </div>
 
@@ -388,176 +412,203 @@
         </div>
         </div>
 
-    </section> <br> </br> 
+    </section> <br> </br>
     <!--====== costing you end ======-->
 
     <section class="quote-wrapper" data-cy="homepage-quotes">
         <header class="quote-header">Don’t just take our word for it.</header>
         <div class="note-wrapper">
-          <p class="note white-txt">Join over a million people building their credit with Snatch Credit.</p>
+            <p class="note white-txt">Join over a million people building their credit with Snatch Credit.</p>
         </div>
         <div class="marquee-wrapper">
-          <div class="marquee">
-            <div class="quote">
-              <div class="quote-text">Snatch Credit helped me understand the importance of building credit and actively improving my credit score in return for education. As a teenager about to turn 19, credit can be extremely confusing, but Snatch Credit made it easy!</div>
-              <div class="quote-author">Nadia T.</div>
+            <div class="marquee">
+                <div class="quote">
+                    <div class="quote-text">Snatch Credit helped me understand the importance of building credit and
+                        actively improving my credit score in return for education. As a teenager about to turn 19,
+                        credit can be extremely confusing, but Snatch Credit made it easy!</div>
+                    <div class="quote-author">Nadia T.</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">Thanks to Snatch Credit, my credit score went from a 545 to almost a 600 in
+                        as little as 2 months. This is incredibly important for me and my family, as we are planning for
+                        our future!</div>
+                    <div class="quote-author">Amit K.</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">I was skeptical at first, but Snatch Credit managed to increase my credit
+                        score from 0 to 596 in just one payment. Now, I'm in the middle of getting my first car loan,
+                        and I couldn't be happier!</div>
+                    <div class="quote-author">Sara M.</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">Snatch Credit turned my credit score from 0 to 700 in just 5 months. I am
+                        beyond grateful for this program and the education it provides.</div>
+                    <div class="quote-author">@sam.miller</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">Starting with no credit score at all, Snatch Credit helped me achieve a
+                        credit score of 620 within just one month. I can't thank them enough for the opportunity they
+                        provided me.</div>
+                    <div class="quote-author">@jennifer_p</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">Within just a month of joining Snatch Credit, my credit score went from 0 to
+                        596. I couldn't be happier with the results and the education I received.</div>
+                    <div class="quote-author">Carlos R.</div>
+                </div>
             </div>
-            <div class="quote">
-              <div class="quote-text">Thanks to Snatch Credit, my credit score went from a 545 to almost a 600 in as little as 2 months. This is incredibly important for me and my family, as we are planning for our future!</div>
-              <div class="quote-author">Amit K.</div>
-            </div>
-            <div class="quote">
-              <div class="quote-text">I was skeptical at first, but Snatch Credit managed to increase my credit score from 0 to 596 in just one payment. Now, I'm in the middle of getting my first car loan, and I couldn't be happier!</div>
-              <div class="quote-author">Sara M.</div>
-            </div>
-            <div class="quote">
-              <div class="quote-text">Snatch Credit turned my credit score from 0 to 700 in just 5 months. I am beyond grateful for this program and the education it provides.</div>
-              <div class="quote-author">@sam.miller</div>
-            </div>
-            <div class="quote">
-              <div class="quote-text">Starting with no credit score at all, Snatch Credit helped me achieve a credit score of 620 within just one month. I can't thank them enough for the opportunity they provided me.</div>
-              <div class="quote-author">@jennifer_p</div>
-            </div>
-            <div class="quote">
-              <div class="quote-text">Within just a month of joining Snatch Credit, my credit score went from 0 to 596. I couldn't be happier with the results and the education I received.</div>
-              <div class="quote-author">Carlos R.</div>
-            </div>
-          </div>
-          <div class="marquee">
-            <div class="quote">
-              <div class="quote-text">Snatch Credit helped me understand the importance of building credit and actively improving my credit score in return for education. As a teenager about to turn 19, credit can be extremely confusing, but Snatch Credit made it easy!</div>
-              <div class="quote-author">Nadia T.</div>
-            </div>
-            <div class="quote">
-              <div class="quote-text">Thanks to Snatch Credit, my credit score went from a 545 to almost a 600 in as little as 2 months. This is incredibly important for me and my family, as we are planning for our future!</div>
-              <div class="quote-author">Amit K.</div>
-            </div>
-            <div class="quote">
-              <div class="quote-text">I was skeptical at first, but Snatch Credit managed to increase my credit score from 0 to 596 in just one payment. Now, I'm in the middle of getting my first car loan, and I couldn't be more grateful. Thank you, Snatch Credit!</div>
-              <div class="quote-author">Heath G.</div>
-                </section>
+            <div class="marquee">
+                <div class="quote">
+                    <div class="quote-text">Snatch Credit helped me understand the importance of building credit and
+                        actively improving my credit score in return for education. As a teenager about to turn 19,
+                        credit can be extremely confusing, but Snatch Credit made it easy!</div>
+                    <div class="quote-author">Nadia T.</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">Thanks to Snatch Credit, my credit score went from a 545 to almost a 600 in
+                        as little as 2 months. This is incredibly important for me and my family, as we are planning for
+                        our future!</div>
+                    <div class="quote-author">Amit K.</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-text">I was skeptical at first, but Snatch Credit managed to increase my credit
+                        score from 0 to 596 in just one payment. Now, I'm in the middle of getting my first car loan,
+                        and I couldn't be more grateful. Thank you, Snatch Credit!</div>
+                    <div class="quote-author">Heath G.</div>
+    </section>
 
 
-                <section class="pricing d-flex justify-content-center">
-                    <div class="container">
-                        <h6 class="mb-3 text-center">Whats the price?</h6>
-                        <p class="mb-2 text-center" style="font-size: 16px;">We offer 3 credit builder plans for your goal and your budget.</p>
-                        <p class="mb-6 text-center" style="font-size: 14px;" class="p2">We're cheap :)</p>
-                        <div class="d-flex pricing-list gap-5 text-center">
-                            <div class="">
-                                <div class="cards">
-                                    <img alt="background wave" class="sc-448289b2-13 bxFZpY"
-                                        src="assets/images/Pale_Blue_Wave_Top.svg">
-                                    <div class="content z-index-1">
-                                        <h3>Small Builder</h3>
-                                        <h1>$25 <span>/mo</span></h1>
-                                        <h4>for 24 months</h4>
-                                        <h5>Get back: $520</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Admin fee</p>
-                                            <p>$9</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Total payments</p>
-                                            <p>$600</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Get back</p>
-                                            <p style="font-weight: bold;color:rgb(111, 197, 35)">$520</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Final cost</p>
-                                            <p style="font-weight: bold;">$89</p>
-                                        </div>
-                                        <button class="button w-100 mt-4">Get started</button>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-7 sm-text">
-                                    <p class="mb-0">Interest rate</p>
-                                    <p class="mb-0">14.14%</p>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-7 sm-text">
-                                    <p class="mb-0">Annual Percentage Rate</p>
-                                    <p class="mb-0">15.92%</p>
-                                </div>
+    <section class="pricing d-flex justify-content-center">
+        <div class="container">
+            <h6 class="mb-3 text-center">Whats the price?</h6>
+            <p class="mb-2 text-center" style="font-size: 16px;">We offer 3 credit builder plans for your goal and your
+                budget.</p>
+            <p class="mb-6 text-center" style="font-size: 14px;" class="p2">We're cheap :)</p>
+            <div class="d-flex pricing-list gap-5 text-center">
+                <div class="">
+                    <div class="cards">
+                        <div class="person">
+                            <img class="person-img" src="assets\images\icon-build.png" alt="Snatch builder">
+                        </div>
+                        <img alt="background wave" class="sc-448289b2-13 bxFZpY"
+                            src="assets/images/Pale_Blue_Wave_Top.svg">
+                        <div class="content z-index-1">
+                            <h2>Snatch Builder</h2>
+                            <h1>$10 <span>/mo</span></h1>
+                            <h4>for 24 months</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Admin fee</p>
+                                <p>$0</p>
                             </div>
-                            <div class="">
-                                <div class="cards">
-                                    <img alt="background wave" class="sc-448289b2-13 bxFZpY"
-                                        src="assets/images/Pale_Orange_Wave_Top.svg">
-                                    <div class="content z-index-1">
-                                        <h3>Medium Builder</h3>
-                                        <h1>$35 <span>/mo</span></h1>
-                                        <h4>for 24 months</h4>
-                                        <h5>Get back: $520</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Admin fee</p>
-                                            <p>$9</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Total payments</p>
-                                            <p>$600</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Get back</p>
-                                            <p style="font-weight: bold;color:rgb(111, 197, 35)">$520</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Final cost</p>
-                                            <p style="font-weight: bold;">$89</p>
-                                        </div>
-                                        <button class="button w-100 mt-4">Get started</button>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-7 sm-text">
-                                    <p class="mb-0">Interest rate</p>
-                                    <p class="mb-0">14.14%</p>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-7 sm-text">
-                                    <p class="mb-0">Annual Percentage Rate</p>
-                                    <p class="mb-0">15.92%</p>
-                                </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Total payments</p>
+                                <p>$240</p>
                             </div>
-                            <div class="">
-                                <div class="cards">
-                                    <img alt="background wave" class="sc-448289b2-13 bxFZpY"
-                                        src="assets/images/Light_Orange_Wave_Top.svg">
-                                    <div class="content z-index-1">
-                                        <h3>Large Builder</h3>
-                                        <h1>$48 <span>/mo</span></h1>
-                                        <h4>for 24 months</h4>
-                                        <h5>Get back: $520</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Admin fee</p>
-                                            <p>$9</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Total payments</p>
-                                            <p>$600</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Get back</p>
-                                            <p style="font-weight: bold;color:rgb(111, 197, 35)">$520</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Final cost</p>
-                                            <p style="font-weight: bold;">$89</p>
-                                        </div>
-                                        <button class="button w-100 mt-4">Get started</button>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-7 sm-text">
-                                    <p class="mb-0">Interest rate</p>
-                                    <p class="mb-0">14.14%</p>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-7 sm-text">
-                                    <p class="mb-0">Annual Percentage Rate</p>
-                                    <p class="mb-0">15.92%</p>
-                                </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Hidden fees</p>
+                                <p style="font-weight: bold;color:rgb(111, 197, 35)">$0</p>
                             </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Final cost</p>
+                                <p style="font-weight: bold;">24</p>
+                            </div>
+                            <button class="button w-100 mt-4">Get started</button>
+                        </div>
                     </div>
-                </section>
-            
+                    <div class="d-flex justify-content-between align-items-center px-7 sm-text">
+                        <p class="mb-0">Interest rate</p>
+                        <p class="mb-0">0%</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center px-7 sm-text">
+                        <p class="mb-0">Annual Percentage Rate</p>
+                        <p class="mb-0">0%</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="cards">
+                        <div class="person">
+                            <img class="person-img" src="assets\images\Snatch_Growth.png" alt="Snatch Growth Plan">
+                        </div>
+                        <img alt="background wave" class="sc-448289b2-13 bxFZpY"
+                            src="assets/images/Pale_Orange_Wave_Top.svg">
+                        <div class="content z-index-1">
+                            <h2>Snatch Growth</h2>
+                            <h1>$15 <span>/mo</span></h1>
+                            <h4>for 24 months</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Admin fee</p>
+                                <p>$0</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Total payments</p>
+                                <p>24</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Hidden fees</p>
+                                <p style="font-weight: bold;color:rgb(111, 197, 35)">$0</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Final cost</p>
+                                <p style="font-weight: bold;">$360</p>
+                            </div>
+                            <button class="button w-100 mt-4">Get started</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center px-7 sm-text">
+                        <p class="mb-0">Interest rate</p>
+                        <p class="mb-0">0%</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center px-7 sm-text">
+                        <p class="mb-0">Annual Percentage Rate</p>
+                        <p class="mb-0">0%</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="cards">
+                        <div class="person">
+                            <img class="person-img" src="assets/images/snatch-pro.png" alt="Snatch pro plan">
+                        </div>
+                        <img alt="background wave" class="sc-448289b2-13 bxFZpY"
+                            src="assets/images/Light_Orange_Wave_Top.svg">
+                        <div class="content z-index-1">
+                            <h2>Snatch Pro</h2>
+                            <h1>$20 <span>/mo</span></h1>
+                            <h4>for 24 months</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Admin fee</p>
+                                <p>$0</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Total payments</p>
+                                <p>24</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Hidden fees</p>
+                                <p style="font-weight: bold;color:rgb(111, 197, 35)">$0</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Final cost</p>
+                                <p style="font-weight: bold;">$480</p>
+                            </div>
+                            <button class="button w-100 mt-4">Get started</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center px-7 sm-text">
+                        <p class="mb-0">Interest rate</p>
+                        <p class="mb-0">0%</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center px-7 sm-text">
+                        <p class="mb-0">Annual Percentage Rate</p>
+                        <p class="mb-0">0%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <!-- ******************************* Join now Prompt ******************************* -->
     <section class="control-your-credit">
@@ -582,124 +633,154 @@
 
 
     <!-- ******************************* Join now prompt ******************************* -->
-<!------------ q/a start ----------------->
+    <!------------ q/a start ----------------->
     <section class="container">
-    <div id="faq-header">
-        <h1 class="general-h1"> Still have questions?</h1>
+        <div id="faq-header">
+            <h1 class="general-h1"> Still have questions?</h1>
 
-        <p class="text-center"> You can visit our <a href="/support"> support</a> section for more details</p>
-<div id="accordion">
+            <p class="text-center"> You can visit our <a href="/support"> support</a> section
+                for more details</p>
+            <div id="accordion">
 
-    <!------------ credit report and scores section start ----------------->
-    <div class="segments" id="segment1">
+                <!------------ credit report and scores section start ----------------->
+                <div class="segments" id="segment1">
 
-        <h3 class="accordion-toggle">How does snatch work?</h3>
-        <div class="accordion-content">
-          <p>You build with installments. Once you sign up, we issue an installment loan to you for 24 months at $10 a month. <br> 
-        We report your payment performance. Our goal with Snatch is to help you build positive payment history, safely.</p>
-        </div>
+                    <h3 class="accordion-toggle">How does snatch work?</h3>
+                    <div class="accordion-content">
+                        <p>You build with installments. Once you sign up, we issue an
+                            installment loan to you for 24
+                            months at $10 a month. <br>
+                            We report your payment performance. Our goal with Snatch is to help
+                            you build positive
+                            payment history, safely.</p>
+                    </div>
 
-        <h3 class="accordion-toggle">Do you report to credit bureaus?</h3>
-        <div class="accordion-content">
-          <p>Yes - we report to one or more credit bureaus.  <a href="/support">Read more about this here.</a></p>
-        </div>
+                    <h3 class="accordion-toggle">Do you report to credit bureaus?</h3>
+                    <div class="accordion-content">
+                        <p>Yes - we report to one or more credit bureaus. <a href="/support">Read more about this
+                                here.</a></p>
+                    </div>
 
-        <h3 class="accordion-toggle">Is this a credit card?</h3>
-        <div class="accordion-content">
-          <p>No, we do not offer a credit card. This is only an installment loan, which terms we issue per plan you sign up for.</a></p>
-        </div>
+                    <h3 class="accordion-toggle">Is this a credit card?</h3>
+                    <div class="accordion-content">
+                        <p>No, we do not offer a credit card. This is only an installment loan,
+                            which terms we issue per
+                            plan you sign up for.</a></p>
+                    </div>
 
-        <h3 class="accordion-toggle">Are there any other fees?</h3>
-        <div class="accordion-content">
-          <p>We do not charge any interest, prepayment fees, late payment fees, or anything. You only pay what you sign up for. :) </p>
-        </div>
+                    <h3 class="accordion-toggle">Are there any other fees?</h3>
+                    <div class="accordion-content">
+                        <p>We do not charge any interest, prepayment fees, late payment fees, or
+                            anything. You only pay
+                            what you sign up for. :) </p>
+                    </div>
 
-        <h3 class="accordion-toggle">What are the courses?</h3>
-        <div class="accordion-content">
-          <p>The courses are curated by trained professionals on a wide array of topics. Anything from balancing a check book to how to purchase commercial real estate.</p>
-        </div>
+                    <h3 class="accordion-toggle">What are the courses?</h3>
+                    <div class="accordion-content">
+                        <p>The courses are curated by trained professionals on a wide array of
+                            topics. Anything from
+                            balancing a check book to how to purchase commercial real estate.
+                        </p>
+                    </div>
 
-        <h3 class="accordion-toggle">Do you offer returns on purchases?</h3>
-        <div class="accordion-content">
-          <p>If you're looking to return your purchase for any reason, we're here to help! We offer free refunds within 30 days. To initiate a return, please email support@snatchcredit.com.</p>
-        </div>
+                    <h3 class="accordion-toggle">Do you offer returns on purchases?</h3>
+                    <div class="accordion-content">
+                        <p>If you're looking to return your purchase for any reason, we're here
+                            to help! We offer free
+                            refunds within 30 days. To initiate a return, please email
+                            support@snatchcredit.com.</p>
+                    </div>
 
-        <h3 class="accordion-toggle">What is a creditor?</h3>
-        <div class="accordion-content">
-          <p>A creditor is someone who provides credit. This includes, but is not limited to, banks, collection agencies and even car dealerships. We report your repayment progress to the credit bureaus, who then use that information to build your credit profile.</p>
-        </div>
+                    <h3 class="accordion-toggle">What is a creditor?</h3>
+                    <div class="accordion-content">
+                        <p>A creditor is someone who provides credit. This includes, but is not
+                            limited to, banks,
+                            collection agencies and even car dealerships. We report your
+                            repayment progress to the
+                            credit bureaus, who then use that information to build your credit
+                            profile.</p>
+                    </div>
 
-        <h3 class="accordion-toggle">When will I see results?</h3>
-        <div class="accordion-content">
-          <p>Results vary for everyone. You and your credit report are unique.</p>
-        </div>
+                    <h3 class="accordion-toggle">When will I see results?</h3>
+                    <div class="accordion-content">
+                        <p>Results vary for everyone. You and your credit report are unique.</p>
+                    </div>
 
-        <h3 class="accordion-toggle">Is there a credit check?</h3>
-        <div class="accordion-content">
-          <p>No, your credit score is just one component of your credit report. We value inclusiveness and fairness, so we leave your credit report at the door.</a></p>
-        </div>
+                    <h3 class="accordion-toggle">Is there a credit check?</h3>
+                    <div class="accordion-content">
+                        <p>No, your credit score is just one component of your credit report. We
+                            value inclusiveness and
+                            fairness, so we leave your credit report at the door.</a></p>
+                    </div>
     </section> <br> </br>
-      
-      
-      
-    
-    
-     <!--====== Footer PART START ======-->
 
-     <footer class="footer">
+    <!--====== Footer PART START ======-->
+    <footer class="section footer-content footer-section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-4">
-              <h3 class="title">Title 1</h3>
-              <ul class="list">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <h3 class="title">Title 2</h3>
-              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus ultrices, scelerisque sapien id, tempor risus.</p>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <h3 class="title">Title 3</h3>
-              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <hr class="separator">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <p class="join">Join our newsletter</p>
-              <form class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="inputPassword2" class="sr-only">Email</label>
-                  <input type="email" class="form-control" id="inputPassword2" placeholder="Email">
+            <div class="row">
+                <div class="col-md footer-group">
+                    <img src="assets/images/logo.png" class="logo">
+                    <p> Snatch, Credit building for everyone.</p>
+                    <p class="disclaimer">© 2022 Snatch Inc. <br> All rights reserved.</p>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-              </form>
+                <div class="col-md footer-group">
+                    <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/SnatchCredit" target="_blank">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-contact text-center mt-4 mt-md-0">
+                        <a class="btn btn-primary" href="#" target="_blank">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-group">
+                    <ul>
+                        <li><a href="about.html">
+                                <h6>About</h6>
+                            </a></li>
+                        <li><a href="#">
+                                <h6>Careers</h6>
+                            </a></li>
+                        <li><a href="support.html">
+                                <h6>Support</h6>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-md footer-group">
+                    <ul>
+                        <li><a href="#" target="_blank">
+                                <h6>Terms of Service</h6>
+                            </a></li>
+                        <li><a href="#">
+                                <h6>Privacy Policy</h6>
+                            </a></li>
+                        <li><a href="#">
+                                <h6>Affiliate program</h6>
+                            </a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <p class="copy">© 2023 My Company. All rights reserved.</p>
-            </div>
-          </div>
         </div>
-      </footer>
+    </footer>
+
+
 
     <!--====== Footer PART ENDS ======-->
 
@@ -711,26 +792,26 @@
     <script>
         // select the sticky button element
         const stickyButton = document.querySelector('.sticky-container');
-      
+
         // get the position of the branding section relative to the top of the page
         const brandingSection = document.querySelector('.branding');
         const brandingSectionPosition = brandingSection.getBoundingClientRect().top;
-      
+
         // add a scroll event listener to the window
-        window.addEventListener('scroll', function() {
-          // get the current vertical scroll position of the window
-          const scrollPosition = window.scrollY;
-      
-          // if the user has scrolled past the branding section
-          if (scrollPosition > brandingSectionPosition) {
-            // show the sticky button by removing the "hidden" class
-            stickyButton.classList.remove('hidden');
-          } else {
-            // hide the sticky button by adding the "hidden" class
-            stickyButton.classList.add('hidden');
-          }
+        window.addEventListener('scroll', function () {
+            // get the current vertical scroll position of the window
+            const scrollPosition = window.scrollY;
+
+            // if the user has scrolled past the branding section
+            if (scrollPosition > brandingSectionPosition) {
+                // show the sticky button by removing the "hidden" class
+                stickyButton.classList.remove('hidden');
+            } else {
+                // hide the sticky button by adding the "hidden" class
+                stickyButton.classList.add('hidden');
+            }
         });
-      </script>
+    </script>
 
 </body>
 
