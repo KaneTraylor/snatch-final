@@ -765,13 +765,13 @@ ul.sub-list li a {
 /* *************** Self Credit Builder Account
  ******************************* */
 .self-credit-builder-account {
-    background-color: rgb(252, 174, 3);
+    background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%) !important;
     padding: 0px 16px 0px;
     position: relative;
 }
 
 .self-credit-builder-account img {
-    height: 345px;
+    height: 545px;
 }
 
 .self-credit-builder-account button {
@@ -784,13 +784,14 @@ ul.sub-list li a {
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 22px;
+    color: var(--white);
     line-height: 32px;
 }
 
 .self-credit-builder-account p {
     font-size: 14px;
     line-height: 22px;
-    color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
     margin-bottom: 16px;
 }
 
@@ -798,6 +799,7 @@ ul.sub-list li a {
     font-size: 16px;
     line-height: 21px;
     padding: 11px 16px;
+    color: #ffffff;
     min-height: 45px;
     text-align: center;
 }
@@ -805,7 +807,7 @@ ul.sub-list li a {
 .self-credit-builder-account .p2 {
     font-size: 9px;
     line-height: 13px;
-    color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
     margin-bottom: 24px;
 }
 
@@ -814,7 +816,7 @@ ul.sub-list li a {
         font-size: 14px;
         line-height: 22px;
         max-width: 150px;
-        color: rgb(50, 50, 50);
+        color: rgb(255, 255, 255);
         margin-bottom: 16px;
     }
 
@@ -822,7 +824,7 @@ ul.sub-list li a {
         font-size: 10px;
         line-height: 13px;
         width: 35%;
-        color: rgb(50, 50, 50);
+        color: rgb(255, 255, 255);
     }
 
     .self-credit-builder-account h1 {
@@ -830,6 +832,7 @@ ul.sub-list li a {
         margin-top: 0px;
         margin-bottom: 10px;
         font-size: 22px;
+        color: #FFFFFF;
         line-height: 32px;
         max-width: 280px;
     }
@@ -997,13 +1000,12 @@ section.pricing {
 /* *************** Pay rent
  ******************************* */
 .pay-rent {
-    background: var(--mint-green);
-    color: var(--white);
+    background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%) !important;
     padding: 68px 0px 0;
 }
 
 .pay-rent h1 {
-    background: var(--mint-green);
+    background: var(--white);
     color: var(--white);
     font-size: 40px;
     line-height: 48px;
@@ -1013,6 +1015,7 @@ section.pricing {
 .pay-rent p {
     margin: 40px 15px 24px;
     font-size: 15px;
+    color: #FFFFFF;
 }
 
 .pay-rent button {
@@ -1080,96 +1083,115 @@ section.pricing {
 }
 
 
-/* *************** Payment history makes up
- ******************************* */
+/* *************** Payment history makes up ******************************* */
 .payment-history-makes {
     position: relative;
     padding: 15px 0px;
     background-color: #ffffff;
-}
-
-.payment-history-makes img {
+  }
+  
+  .payment-history-makes img {
     padding: 35px 38px;
-}
-
-.payment-history-makes h1 {
+  }
+  
+  .payment-history-makes h1 {
     font-size: 24px;
     margin-bottom: 16px;
     margin-left: auto;
     font-weight: bold;
     margin-top: 0px;
     color: rgb(50, 50, 50);
-}
-
-.payment-history-makes p {
+  }
+  
+  .payment-history-makes p {
     margin-top: 0px;
     color: rgb(102, 102, 102);
     font-size: 14px;
     margin-left: 89px;
     margin-bottom: 24px;
-}
-
-.payment-history-heading {
-
-    padding-top: 100px;
-}
-
-.payment-history-makes .cards {
-    background-color: #0076A3;
-    color: var(--white);
-    box-shadow: rgb(0 0 0 / 10%) 0px 4px 8px 0px;
-    border-radius: var(--corner-radius-large);
-    padding: 40px 40px px 40px;
-    overflow: hidden;
-}
-
-.payment-history-makes .cards .shape {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 203%;
-    /* max-width: 320px; */
-}
-
-.payment-history-makes .cards a {
-    font-family: var(--self-font-family);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-    font-weight: var(--semi-bold);
-    color: var(--primary-text);
-    border-radius: var(--corner-radius-small);
-    border: 1px solid transparent;
-    text-decoration: none;
-    display: inline-flex;
-    font-size: 16px;
-    line-height: 21px;
-    padding: 11px 13px;
-    min-height: 45px;
-    background: var(--cta-orange);
-}
-
-
-@media (max-width: 763px) {
-    .payment-history-makes .cards {
-        max-width: 100%;
-    }
-
-    .payment-history-makes .cards .shape {
-        width: 103%;
-    }
-}
-
-@media (max-width:981px) {
+  }
+  
+  @media (max-width: 981px) {
     .payment-history-makes p {
-        margin-left: 0;
+      margin-left: 0;
     }
-}
+  }
+  
+  /* Center the first and third columns on large screens */
+  .payment-history-makes .col-lg-4:nth-of-type(1),
+  .payment-history-makes .col-lg-4:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  /* Stack columns on small screens */
+  @media (max-width: 767px) {
+    .payment-history-makes .col-lg-4,
+    .payment-history-makes .col-lg-8 {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Add margin-bottom to images on small screens */
+    .payment-history-makes img {
+      margin-bottom: 40px;
+    }
+  }
+  
+  /* CSS class for aligning text to the left and image to the right */
+  .right-align {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+  }
+  
+  /* Apply the 'right-align' class to the second and fourth columns */
+  .payment-history-makes .col-lg-4:nth-of-type(2),
+  .payment-history-makes .col-lg-4:nth-of-type(4) {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  /* Reversed order for second and fourth column on large screens */
+  @media (min-width: 992px) {
+    .payment-history-makes .col-lg-4:nth-of-type(2),
+    .payment-history-makes .col-lg-4:nth-of-type(4) {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .payment-history-makes .col-lg-4:nth-of-type(2).order-2,
+    .payment-history-makes .col-lg-4:nth-of-type(4).order-4 {
+      order: 1;
+    }
+    
+    .payment-history-makes .col-lg-4:nth-of-type(1).order-1,
+    .payment-history-makes .col-lg-4:nth-of-type(3).order-3 {
+      order: 2;
+    }
+  }
+
+  .payment-history-makes .col-lg-8.order-2 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: 767px) {
+    .payment-history-makes .col-lg-8 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  
+  
 
 
 /* *************** Trusted Security
