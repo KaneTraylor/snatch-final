@@ -1114,12 +1114,33 @@ section.pricing {
     margin: 0px;
 }
 
+.start-building-history .cards:hover {
+    background-color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.start-building-history .cards:hover {
+    transform: translateY(-5px);
+}
+
 
 /* *************** Payment history makes up ******************************* */
 .payment-history-makes {
     position: relative;
     padding: 15px 0px;
     background-color: #ffffff;
+}
+
+.payment-history-heading {
+    padding-top: 100px;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(50, 50, 50);
 }
 
 .payment-history-makes img {
@@ -1317,6 +1338,68 @@ section.pricing {
     color: rgb(50, 50, 50);
 }
 
+.gradient-background {
+    background-image: linear-gradient(111deg, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(51, 146, 255)) 0%, var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(51, 197, 197)) 100%);
+    padding: 64px 0;
+}
+
+.gradient-background h1 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.gradient-background p {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-right: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .gradient-background p {
+        padding-left: 45px;
+    }
+}
+
+.gradient-background .d-flex {
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.gradient-background .small-card {
+    max-width: 400px;
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.gradient-background .small-card h3 {
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--primary-text);
+}
+
+.gradient-background .small-card p {
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-text);
+    font-weight: normal;
+}
+
+
+
 
 /* *************** Benefits of a Credit Builder
  ******************************* */
@@ -1325,6 +1408,7 @@ section.pricing {
     padding: 48px 0px;
     padding-top: 100px;
     background-color: white;
+    padding-bottom: 50px;
 }
 
 .benefits-of-credit h1 {
@@ -1337,13 +1421,6 @@ section.pricing {
     color: rgb(50, 50, 50);
 }
 
-.benefits-of-credit .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .benefits-of-credit .cards img {
     width: 60px;
