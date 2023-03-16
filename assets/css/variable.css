@@ -231,7 +231,7 @@
     --kt-danger-rgb: 241, 65, 108;
     --kt-dark-rgb: 24, 28, 50;
     --kt-text-white: #ffffff;
-    --kt-text-primary: #4f932d;
+    --kt-text-primary: rgb(0, 173, 238);
     --kt-text-secondary: #E4E6EF;
     --kt-text-light: #f5f8fa;
     --kt-text-success: #50cd89;
