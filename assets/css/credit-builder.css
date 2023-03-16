@@ -19,58 +19,76 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    }
-    
-    .ready-for-liftoff-credit .ready-wrapper {
+}
+
+.ready-for-liftoff-credit .ready-wrapper {
     background: var(--white);
     color: var(--primary-text);
-    box-shadow: rgb(133 127 120 / 64%) 0px 8px 24px;;
+    box-shadow: rgb(133 127 120 / 64%) 0px 8px 24px;
+    ;
     padding: calc(var(--spacing-increment) * 2);
     border-radius: var(--corner-radius-large);
     margin-left: 20px;
     margin-right: 20px;
     outline-color: var(--gray-primary-900);
-    }
-    
-    .ready-for-liftoff-credit .for-mg {
+}
+
+.ready-for-liftoff-credit .for-mg {
     height: 117px;
-    }
-    
-    .ready-for-liftoff-credit .banner-img-mb {
+}
+
+.ready-for-liftoff-credit .banner-img-mb {
     width: 50px;
     position: absolute;
     top: 10;
     margin-bottom: 120px;
     z-index: -1;
-    }
-    
-    .ready-for-liftoff-credit .ready-wrapper h4 {
+}
+
+.ready-for-liftoff-credit .ready-wrapper h4 {
     font: var(--title-3);
     text-align: center;
     margin: 0;
-    }
-    
-    .ready-for-liftoff-credit .ready-wrapper p {
+}
+
+.ready-for-liftoff-credit .ready-wrapper p {
     font: var(--footnote-medium);
     text-align: center;
     margin: 0;
-    }
-    
-    .ready-for-liftoff-credit .ready-wrapper h5 {
+}
+
+.ready-for-liftoff-credit .ready-wrapper h5 {
     font: var(--headline);
     text-align: center;
     color: var(--dark-blue);
     margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        height: unset;
     }
 
-    @media (max-width: 1200px) {
-        .hero {
-            height: unset;
-        }
-    
-        .banner-img-credit,
-        .main .content h2,
-        .main .content h6 {
-            display: none;
-        }
+    .banner-img-credit,
+    .main .content h2,
+    .main .content h6 {
+        display: none;
     }
+}
+
+
+.credit-builder-section .credit-builder-section h1 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.credit-builder-section p {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #000000;
+}
+
+}
